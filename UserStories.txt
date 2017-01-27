@@ -5,7 +5,7 @@ As a user i want to see the imports and exports for selected coutries, to see if
 As a user i want to compare impots against exports for a single country, to see if the country is producing or consuming
 As a user i want to see when major global events happened, so i can find and compare data around those events
 As a user i want to see connections between countries, so i can identify who are trading partners globaly
-As a user i want higher volume trade partnerships to be larger than smaller volume partnerships, so i can easily identify significant relationships
+As a user i want higher volume trade partnerships to be more visualy significant than smaller volume partnerships, so i can easily identify relationships and their size
 As a user i want to break imports and exports into goods categories, so i can see how resourses are moving around the world
 As a user i want to filter the displayed data to a certian category or a certian year, so i can find the specific data that i need
 As a user, i want to see the ranking of importers/exporters for a specified category or year, so i can see who is importing/exporting the most. 
@@ -14,7 +14,14 @@ As a user i want to see how imported/exported good changed over time, to see how
 As a user, i want to be able to see a brief summary of a countries data above or alongside the vis, so i dont have to leave the main vis
 As a user, i want to be able to see global statistics, so i can see what goods are popularly traded gobally
 As a user i want to compare a country's data to the global data, to see the percentage of global trade that the specified country represents. 
-As a user i want to clear any selection i have made, so i can make a new selection
-As a user i want to be able to clearly see any selection i have made, so i know if my selection matches the data that i want to see
+As a user i want to clear any single parameter selection i have made, so i can broaden the data displayed if my selction is not what i'm looking for
+As a user i want the visualization to automaticly refresh if i change my selection parameters so i dont have to prompt the vis to search every time my selection changes
+As a user i want to clear all parameters i have selected so i can start the search process from scratch
+As a user i want to be able to clearly see any selection parameters i have made, so i know if my selection matches the data that i want to see
 As a user i want to be able to change a single filter, so i dont have to restart the search process for a simliar query
 As a user i want to have access to a tutorial of some kind, so i can learn how to use the visualisation
+As a user, i want to have links or similar prompts that i can click on so i can explore the data without nessisarily knowing what i'm looking for
+As a user, i want to be able to filter the prompts im given so i can find data quickly if i know specificaly what im looking for
+As a user, i want to be able to close any pop-up that comes up so i can remove it from the screen
+As a user i want to be able to move any popup that come up so i can see information it may be covering without removing it from the screen
+As a user, i want any pop-up that comes up to cover a minimal amount of informaion, so the pop-ups are unobtrusive
