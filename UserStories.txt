@@ -21,6 +21,7 @@ As a user i want to be able to clearly see any selection parameters i have made,
 As a user i want to be able to change a single filter, so i dont have to restart the search process for a simliar query
 As a user i want to have access to a tutorial of some kind, so i can learn how to use the visualisation
 As a user, i want to have links or similar prompts that i can click on so i can explore the data without nessisarily knowing what i'm looking for
+As a user i want to have links or prompts to speifc search queries, so i can explore data i may not have thought to explore, such as data around a specific historical event. 
 As a user, i want to be able to filter the prompts im given so i can find data quickly if i know specificaly what im looking for
 As a user, i want to be able to close any pop-up that comes up so i can remove it from the screen
 As a user i want to be able to move any popup that come up so i can see information it may be covering without removing it from the screen
