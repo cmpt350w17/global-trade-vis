@@ -1,0 +1,227 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <svg width="960" height="960"></svg>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+        <script type="text/javascript" src="js/quicksettings.js"></script>
+
+        
+    </head>
+    <body>
+        <div class="topBar">
+            <ul>
+                <li><a  onclick="menuSelect(this)">Home</a></li>
+                
+                <li><a onclick="menuSelect(this)">another one</a></li>
+                <li><a onclick="menuSelect(this)">Warp</a></li>
+                <li><a onclick="menuSelect(this)">another one</a></li>
+            </ul> 
+        <div class="content">
+          <div class="sidebbar">
+            <nav>
+                <p>ipsum lorem</p>
+            </nav>
+          </div>
+            <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <article>
+            <div class="visBody">
+
+
+            <script type="text/javascript">
+            
+
+            //Section for quicksettings pannel
+            var sideNav = document.getElementsByClassName("sidebar");
+
+            var countries = ["one", "two", "three", "four"];
+            var selectedCountries = [];
+            var count = 0;
+            window.onload = function() {
+
+                var panel1 = QuickSettings.create(0, 50, "Settings")
+                  .addButton("Search", function(value) { panel1.movePosition(100,100)})
+                  .addBoolean("Imports",false)
+                  .addBoolean("Exports",false)
+                  .addDropDown("Countries", countries, function(value){
+                    panel1.addBoolean(buildCountryString(value.value) ,true, function(title, value){
+                      remove(title);
+                    })
+                    selectedCountries.push(value.value);
+                  })
+                  
+                  //.addBoolean("Boolean", true, function(title, value) {output("Remove",title); remove(title)})
+                  //.addText("Text", "some text", function(value) { output("Text", value)})
+                  //.addTextArea("TextArea", "a whole bunch of text can go here", function(value) { output("TextArea", value)})
+                  
+                ;
+
+                function buildCountryString(value){
+                  var str = value; 
+                  if (panel1.getValue("Imports") == true){
+                    str = str.concat(", Imports");
+                    panel1.movePosition(100,100);
+                  }
+                  if (panel1.getValue("Exports") == true){
+                   str = str.concat(", Exports");
+                  }
+                  return str;
+                }
+
+                function remove(title){
+                  panel1.removeControl(title);
+                  console.log(selectedCountries);
+                  var indexof = selectedCountries.indexOf(title);
+                  selectedCountries.splice(indexof, 1);
+                  console.log(selectedCountries);
+                }
+
+                var canvas = document.createElement("canvas"),
+                  context = canvas.getContext("2d");
+                canvas.width = 100;
+                canvas.height = 100;
+                context.beginPath();
+                context.fillStyle = "red";
+                context.arc(50, 50, 50, 0, Math.PI * 2);
+                context.fill();
+                /*
+                var panel2 = QuickSettings.create(250, 10, "Panel 2")
+                  .addDropDown("DropDown", ["one", "two", "three"], function(value) { output("DropDown", value.value)})
+                  .addImage("Image", "boyhowdy.jpg")
+                  .addProgressBar("ProgressBar", 100, 50)
+                  .addElement("Element (canvas)", canvas);
+
+                var panel3 = QuickSettings.create(490, 10, "Panel3")
+                  .addHTML("HTML", "<b>bold</b> <u>underline</u> <i>italic</i><ol><li>one</li><li>two</li><li>three</li>")
+                  .addPassword("Password", "12345678", function(value) { output("Password", value)})
+                  .addDate("Date", "2016-07-11", function(value) { output("Date", value)})
+                  .addTime("Time", "06:03:25", function(value) { output("Time", value)});
+
+                var panel4 = QuickSettings.create(730, 10, "Output Panel")
+                  .addTextArea("Output");
+                */
+
+                
+                function output(name, value) {
+                  //panel4.setValue("Output", name + " : " + value);
+                  console.log(name + value);
+                }
+            }
+            //Width and height
+            var w = 600;
+            var h = 250;
+            
+            var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
+                            11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+            
+            var xScale = d3.scale.ordinal()
+                            .domain(d3.range(dataset.length))
+                            .rangeRoundBands([0, w], 0.05);
+
+            var yScale = d3.scale.linear()
+                            .domain([0, d3.max(dataset)])
+                            .range([0, h]);
+            
+            //Create SVG element
+            var svg = d3.select("article")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            //Create bars
+            svg.selectAll("rect")
+               .data(dataset)
+               .enter()
+               .append("rect")
+               .attr("x", function(d, i) {
+                    return xScale(i);
+               })
+               .attr("y", function(d) {
+                    return h - yScale(d);
+               })
+               .attr("width", xScale.rangeBand())
+               .attr("height", function(d) {
+                    return yScale(d);
+               })
+               .attr("fill", function(d) {
+                    return "rgb(0, 0, " + (d * 10) + ")";
+               });
+
+            //Create labels
+            svg.selectAll("text")
+               .data(dataset)
+               .enter()
+               .append("text")
+               .text(function(d) {
+                    return d;
+               })
+               .attr("text-anchor", "middle")
+               .attr("x", function(d, i) {
+                    return xScale(i) + xScale.rangeBand() / 2;
+               })
+               .attr("y", function(d) {
+                    return h - yScale(d) + 14;
+               })
+               .attr("font-family", "sans-serif")
+               .attr("font-size", "11px")
+               .attr("fill", "white");
+
+
+
+
+            //On click, update with new data            
+            d3.select("p")
+                .on("click", function() {
+
+                    //New values for dataset
+                    dataset = [ 11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
+                                5, 10, 13, 19, 21, 25, 22, 18, 15, 13 ];
+
+                    //Update all rects
+                    svg.selectAll("rect")
+                       .data(dataset)
+                       .transition()                                // <-- This makes it a smooth transition!
+                       .attr("y", function(d) {
+                            return h - yScale(d);
+                       })
+                       .attr("height", function(d) {
+                            return yScale(d);
+                       })
+                       .attr("fill", function(d) {
+                            return "rgb(0, 0, " + (d * 10) + ")";
+                       });
+
+                    //Update all labels
+                    svg.selectAll("text")
+                       .data(dataset)
+                       .text(function(d) {
+                            return d;
+                       })
+                       .attr("x", function(d, i) {
+                            return xScale(i) + xScale.rangeBand() / 2;
+                       })
+                       .attr("y", function(d) {
+                            return h - yScale(d) + 14;
+                       });
+                                    
+                });
+
+            
+        </script>
+                
+
+            </div>
+            </article>
+            
+        <div class="footer">
+            <footer>
+                this is some more text
+            </footer>
+        </div>
+    </body>
+</html>
