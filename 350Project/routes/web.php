@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('map');
+});
+
+Route::get('/bars', function () {
+    return view('bars');
+});
+
+Route::get('/lines', function () {
+    return view('lines');
+});
+
+Route::get('/disc', function () {
+    return view('disc');
 });
