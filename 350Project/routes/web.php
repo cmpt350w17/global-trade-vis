@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('map');
+    return view('layouts.Master');
 });
 
 Route::get('/bars', function () {
