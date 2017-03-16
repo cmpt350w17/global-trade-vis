@@ -76,11 +76,11 @@
         <div class="topBar">
             <ul>
                 <li><a  onclick="menuSelect(this)">Home</a></li>
-
+                
                 <li><a onclick="menuSelect(this)">another one</a></li>
                 <li><a onclick="menuSelect(this)">Warp</a></li>
                 <li><a onclick="menuSelect(this)">another one</a></li>
-            </ul>
+            </ul> 
         <div class="content">
           <div class="sidebbar">
             <nav>
@@ -96,7 +96,7 @@
 
 
             <script type="text/javascript">
-
+            
 
             //Section for quicksettings pannel
             var sideNav = document.getElementsByClassName("sidebar");
@@ -116,15 +116,15 @@
                     })
                     selectedCountries.push(value.value);
                   })
-
+                  
                   //.addBoolean("Boolean", true, function(title, value) {output("Remove",title); remove(title)})
                   //.addText("Text", "some text", function(value) { output("Text", value)})
                   //.addTextArea("TextArea", "a whole bunch of text can go here", function(value) { output("TextArea", value)})
-
+                  
                 ;
 
                 function buildCountryString(value){
-                  var str = value;
+                  var str = value; 
                   if (panel1.getValue("Imports") == true){
                     str = str.concat(", Imports");
                     panel1.movePosition(100,100);
@@ -168,22 +168,25 @@
                   .addTextArea("Output");
                 */
 
-
+                
                 function output(name, value) {
                   //panel4.setValue("Output", name + " : " + value);
                   console.log(name + value);
                 }
             }
+           
 
-
-
+            
         </script>
+                
 
-            </article>
-
-            <div class="col-md-6 col-md-offset-4">
-            @yield('content')
             </div>
-
+            </article>
+            
+        <div class="footer">
+            <footer>
+                this is some more text
+            </footer>
+        </div>
     </body>
 </html>
