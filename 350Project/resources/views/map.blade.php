@@ -1,4 +1,6 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.master')
+
+@section('content')
+
 <h3> Map View</h3>
-</html>
+@stop
