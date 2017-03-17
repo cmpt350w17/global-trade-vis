@@ -25,6 +25,8 @@ div.test {
 	margin: 300px;
 }
 </style>
+
+
 <head>
 	<title>Global Trade Vis</title>
    <meta charset="utf-8">
