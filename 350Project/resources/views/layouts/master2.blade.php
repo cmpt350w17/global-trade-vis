@@ -17,7 +17,7 @@
 }
 #sidebar {
 	margin-top: -19px;
-	width:15%
+	width:15%;
 }
 div.test {
 	position: absolute;
@@ -40,32 +40,60 @@ $.ajaxSetup({
     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
   }
 });
+//var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 $(document).ready(function() {
-	var country, commodity, year;
-	var token = $("#token").val();
+	var country = 'Canada';
+	var commodity = 'All Commodities';
+	var year = '2015';
+
+
 	$("#drop").click(function() {
 		country = $("#drop").val();
 		 if (country != "Choose...") {
-			 alert(country);
+			 //console.log(country);
+			 $.ajax({
+				 type: 'GET',
+				 url: '{!!URL::to('ajaxget')!!}',
+				 data: { 'country': country, 'commodity': commodity, 'year': year},
+				 success: function(data) {
+					 console.log('success');
+					 console.log(data);
+					 //$("#jqoutput").html(result);
+			}});
 		 }
-		 /**$.ajax({type: 'POST', url: "/ajaxpost",data: country, success: function(result) {
-       	$("#jqoutput").html(result);
 
-    }});
-	 **/
+
 
 	});
 	$("#drop2").click(function() {
 		 commodity = $("#drop2").val();
 		 if (commodity != "Choose...") {
-			  alert(commodity);
+			  //console.log(commodity);
+			  $.ajax({
+ 				 type: 'GET',
+ 				 url: '{!!URL::to('ajaxget')!!}',
+ 				 data: { 'country': country, 'commodity': commodity, 'year': year},
+ 				 success: function(data) {
+ 					 console.log('success');
+ 					 console.log(data);
+ 					 //$("#jqoutput").html(result);
+ 			}});
 		 }
 
 	});
 	$("#drop3").click(function() {
 		year = $("#drop3").val();
 		if (year != "Choose...") {
-			alert(year);
+			//console.log(year);
+			$.ajax({
+			   type: 'GET',
+			   url: '{!!URL::to('ajaxget')!!}',
+			   data: { 'country': country, 'commodity': commodity, 'year': year},
+			   success: function(data) {
+					console.log('success');
+					console.log(data);
+					//$("#jqoutput").html(result);
+		  }});
 		}
 	});
 	//var dataString = country . " " . commodity . " " . year;
@@ -98,8 +126,8 @@ $(document).ready(function() {
 	<!-- Sidebar -->
 	<div class="w3-sidebar w3-light-grey w3-bar-block" id="sidebar">
   		<h4 class="w3-bar-item">Global Trade Vis</h4>
-	<form>
-		<meta name="csrf-token" id="token" content="{{ csrf_token() }}"/>
+	<form method="GET" id="frm">
+		<meta name="csrf-token" content="{{ csrf_token() }}"/>
 		<div class="form-group">
 		 <label class="col-md-4 control-label">Country</label>
 	    <select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop">

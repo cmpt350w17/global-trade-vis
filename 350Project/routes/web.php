@@ -28,4 +28,4 @@ Route::get('/disc', function () {
 });
 
 Route::get('/test', 'JqueryController@jquery');
-Route::post('/ajaxpost', 'JqueryController@post');
+Route::get('/ajaxget', 'JqueryController@get');
