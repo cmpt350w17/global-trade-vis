@@ -26,3 +26,6 @@ Route::get('/lines', function () {
 Route::get('/disc', function () {
     return view('disc');
 });
+
+Route::get('/test', 'JqueryController@jquery');
+Route::post('/ajaxpost', 'JqueryController@post');

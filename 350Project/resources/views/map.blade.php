@@ -1,6 +1,8 @@
-@extends('layouts.master')
+@extends('layouts.master2')
 
 @section('content')
-
-<h3> Map View</h3>
+<div>
+	<h3> Map View </h3>
+</div>
+<div id="jqoutput"></div>
 @stop
