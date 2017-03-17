@@ -1,6 +1,6 @@
-@extends('layouts.master')
+@extends('layouts.master2')
 
 @section('content')
 
-<h3 id="1"> Bars View</h3>
+<h3> Bar View</h3>
 @stop

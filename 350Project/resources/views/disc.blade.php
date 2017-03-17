@@ -1,8 +1,5 @@
-@extends('layouts.master')
+@extends('layouts.master2')
 
 @section('content')
-
-<html>
-<h3> Disc View</h3>
-</html>
+	<h3> Disc View</h3>
 @stop
