@@ -59,14 +59,14 @@ $(document).ready(function() {
 				 data: { 'country': country, 'commodity': commodity, 'year': year},
 				 success: function(data) {
 					 console.log('success');
-					 console.log(data);
-					 //$("#jqoutput").html(result);
+					 for (var i = 0; i < 11; i++) {
+					 	console.log(data[i].Partner + ": " + data[i].Export);
+				 	 }
+
+
 			}});
 		 }
-
-
-
-	});
+	 });
 	$("#drop2").click(function() {
 		 commodity = $("#drop2").val();
 		 if (commodity != "Choose...") {
@@ -176,18 +176,18 @@ $(document).ready(function() {
 	  <div class="form-group">
 		  <label class="col-md-4 control-label">Year</label>
 	  	  <select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop3">
-	     	<option selected>Choose...</option>
-	     	<option value="1997">1997</option>
-	     	<option value="2000">2000</option>
-	     	<option value="2003">2003</option>
-	     	<option value="2006">2006</option>
-	     	<option value="2009">2009</option>
-	     	<option value="2011">2011</option>
-	     	<option value="2012">2012</option>
-	     	<option value="2013">2013</option>
-			<option value="2014">2014</option>
-			<option value="2015">2015</option>
-	  </select>
+	     	 <option selected>Choose...</option>
+	     	 <option value="1997">1997</option>
+	     	 <option value="2000">2000</option>
+	     	 <option value="2003">2003</option>
+	     	 <option value="2006">2006</option>
+	     	 <option value="2009">2009</option>
+	     	 <option value="2011">2011</option>
+	     	 <option value="2012">2012</option>
+	     	 <option value="2013">2013</option>
+			 <option value="2014">2014</option>
+			 <option value="2015">2015</option>
+	  	 </select>
 	 </div>
  </form>
  </div>
