@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('map');
-});
+Route::get('/', 'JqueryController@jquery');
+
 
 Route::get('/bars', function () {
     return view('bars');
