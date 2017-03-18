@@ -14,9 +14,7 @@
 Route::get('/', 'JqueryController@jquery');
 
 
-Route::get('/bars', function () {
-    return view('bars');
-});
+Route::get('/bars', 'JqueryController@barsQuery');
 
 Route::get('/lines', function () {
     return view('lines');

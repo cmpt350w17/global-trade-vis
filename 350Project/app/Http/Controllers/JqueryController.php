@@ -31,5 +31,12 @@ class JqueryController extends Controller
       **/
 
    }
+   public function barsQuery() {
+      $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')
+      ->where('Reporter', '=','Canada')
+      ->where('Commodity', '=', 'All Commodities')->where('Year', '=', '2015')
+      ->orderBy ('Export', 'DESC')->take (11)->get();
+		 return view('bars',compact('data'));
+	 }
 
 }
