@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'JqueryController@jquery');
+
+
+Route::get('/bars', 'JqueryController@barsQuery');
+
+Route::get('/lines', function () {
+    return view('lines');
 });
+
+Route::get('/disc', function () {
+    return view('disc');
+});
+
+Route::get('/test', 'JqueryController@jquery');
+Route::get('/ajaxget', 'JqueryController@get');

@@ -19,7 +19,7 @@ class MakeTradeTable extends Migration
            $table->string('Partner', 50);
            $table->string('Commodity',100);
            $table->biginteger('Import');
-           $table->string('Conternt',50);
+           $table->string('Continent',50);
            $table->biginteger('Export');
         });
     }
