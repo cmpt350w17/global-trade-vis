@@ -8,27 +8,93 @@ $(document).ready(function() {
 	var country = 'Canada';
 	var commodity = 'All Commodities';
 	var year = '2015';
-	var jdata;
+
 	//console.log(jdata);
 	$(".custom-select").click(function() {
 		country = $("#drop").val();
 		commodity = $("#drop2").val();
 		year = $("#drop3").val();
-		 if (country != "Choose...") {
-			 //console.log(country);
-			 $.ajax({
+		$.ajax({
 				 type: 'GET',
 				 url: '{!!URL::to('ajaxget')!!}',
 				 data: { 'country': country, 'commodity': commodity, 'year': year},
 				 success: function(data) {
 					 console.log('success');
 					 console.log(data);
-					 //jdata = data;
-					 /*for (var i = 0; i < 11; i++) {
-					 	console.log(data[i].Partner + ": " + data[i].Export);
-					}*/
+					 data.shift();
+					 dataset = data;
+					 max = d3.max(dataset, function(d) { return d.Export});
+			       yScale.domain([0, max]);
+			       xScale.domain(d3.range(dataset.length));
+			       //Update all rects
+			       var bars = svg.selectAll("rect")
+			          .data(dataset);
+
+			          //Enter…
+			       bars.enter()
+			          .append("rect")
+			          .attr("x", w)
+			          .attr("y", function(d) {
+			            return h - yScale(d);
+			          })
+			          .attr("width", xScale.rangeBand())
+			          .attr("height", function(d) {
+			             return yScale(d.Export);
+			         })
+			          .attr("fill", "blue");
+
+			        //Update…
+			 		bars.transition()		//Initiate a transition on all elements in the update selection (all rects)
+			 			.duration(500)
+			 			.attr("x", function(d, i) { //Set new x position, based on the updated xScale
+			 				return xScale(i);
+			 			})
+			 			.attr("y", function(d) { //Set new y position, based on the updated yScale
+			 				return h - yScale(d.Export);
+			 			})
+			 			.attr("width", xScale.rangeBand()) //Set new width value, based on the updated xScale
+			 			.attr("height", function(d) {	//Set new height value, based on the updated yScale
+			 				return yScale(d.Export);
+			 			});
+
+
+
+			 			var text = svg.selectAll("text")
+			 					   .data(dataset);
+
+			          text.enter()
+			             .append("text")
+			             .text(function(d) {
+			               return d.Partner;
+			             })
+			             .attr("text-anchor", "middle")
+			             .attr("x", function(d, i) {
+			               return xScale(i) + xScale.rangeBand() / 2;
+			             })
+			             .attr("y", function(d) {
+			               return h - yScale(d.Export) + 14;
+			             })
+			             .attr("font-family", "sans-serif")
+			             .attr("font-size", "10px")
+			             .attr("fill", "white");
+
+			          text.transition()
+			 				.duration(500)
+			 			   .text(function(d) {
+			 					   		return d.Partner;
+			 					   })
+			 					   .attr("x", function(d, i) {
+			 							return xScale(i) + xScale.rangeBand() / 2;
+			 					   })
+			 					   .attr("y", function(d) {
+			 							return h - yScale(d.Export) + 14;
+			 					   });
+
+
+
+
 				}});
-		 	}
+
 		});
 	});
 
@@ -97,10 +163,75 @@ $(document).ready(function() {
 	</form>
 </div>
 @stop
-
 @section('stuff')
-	@foreach ($data as $dt)
-		<td>{{$dt}}</td>
-   @endforeach
+
+	<script>
+	var dataset = <?php echo json_encode($data)?>;
+	dataset.shift();
+	var max = d3.max(dataset, function(d) { return d.Export});
+   console.log(max);
+	var margin = {top: 20, right: 20, bottom: 30, left: 40};
+	var w = 400 - margin.left - margin.right;
+	var h = 300 - margin.top - margin.bottom;
+
+	//Create SVG element
+	var svg = d3.select(".centered")
+	            .append("svg")
+	            .attr("width", w)
+	            .attr("height", h);
+
+
+
+	var xScale = d3.scale.ordinal()
+	               .domain(d3.range(dataset.length))
+	               .rangeRoundBands([0, w], 0.05);
+
+	var yScale = d3.scale.linear()
+	               .domain([0, max])
+	               .range([0, h]);
+
+
+
+	svg.selectAll("rect")
+		.data(dataset)
+		.enter()
+		.append("rect")
+	   .attr("x", function(d,i) { return xScale(i); })
+		.attr("y", function(d) {
+			return h-yScale(d.Export); })
+		.attr("width", xScale.rangeBand())
+		.attr("height", function(d) { return yScale(d.Export); })
+	   .attr("fill", "blue")
+		.on("mouseover", function() {
+					d3.select(this)
+					.attr("fill", "orange");
+		 })
+		.on("mouseout", function(d) {
+					   d3.select(this)
+					   		.transition()
+					   		.duration(250)
+								.attr("fill", "blue");
+				   });
+
+
+	 //Create labels
+	 svg.selectAll("text")
+	    .data(dataset)
+	    .enter()
+	    .append("text")
+	    .text(function(d) {
+	      return d.Partner;
+	    })
+	    .attr("text-anchor", "middle")
+	    .attr("x", function(d, i) {
+	      return xScale(i) + xScale.rangeBand() / 2;
+	    })
+	    .attr("y", function(d) {
+	      return h - yScale(d.Export) + 14;
+	    })
+	    .attr("font-family", "sans-serif")
+	    .attr("font-size", "10px")
+	    .attr("fill", "white");
+	</script>
 
 @stop
