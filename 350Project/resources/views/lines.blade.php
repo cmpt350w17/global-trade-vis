@@ -14,7 +14,8 @@ $(document).ready(function() {
 		Exporter = $("#drop").val();
 		Commodity = $("#drop2").val();
 		Importer = $("#drop3").val();
-		$.ajax({
+		if (Exporter != Importer) {
+			$.ajax({
 				 type: 'GET',
 				 url: '{!!URL::to('lineinfo')!!}',
 				 data: { 'Exporter': Exporter, 'Commodity': Commodity, 'Importer': Importer},
@@ -45,7 +46,7 @@ $(document).ready(function() {
 
 
 				}});
-
+		  }
 		});
 	});
 

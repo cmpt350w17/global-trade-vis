@@ -23,6 +23,10 @@ Route::get('/disc', function () {
     return view('disc');
 });
 
+Route::get('/tester', function () {
+    return view('updateLines');
+});
+
 Route::get('/d3', function() {
    return view('map');
 });
