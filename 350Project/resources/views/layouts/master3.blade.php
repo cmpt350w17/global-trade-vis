@@ -22,11 +22,22 @@
 	margin-top: 30px;
 	height: 300px;
 	width: 400px;
-
-
-
-
 }
+
+body { font: 12px Arial;}
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
 
 
 </style>

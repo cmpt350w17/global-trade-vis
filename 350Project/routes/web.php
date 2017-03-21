@@ -16,9 +16,8 @@ Route::get('/', 'JqueryController@jquery');
 
 Route::get('/bars', 'JqueryController@barsQuery');
 
-Route::get('/lines', function () {
-    return view('lines');
-});
+Route::get('/lines', 'JqueryController@showlines');
+
 
 Route::get('/disc', function () {
     return view('disc');
@@ -33,3 +32,4 @@ Route::get('/barstest', function() {
 
 Route::get('/test', 'JqueryController@jquery');
 Route::get('/ajaxget', 'JqueryController@get');
+Route::get('/lineinfo','JqueryController@linesget');
