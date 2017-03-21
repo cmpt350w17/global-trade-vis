@@ -16,13 +16,20 @@ Route::get('/', 'JqueryController@jquery');
 
 Route::get('/bars', 'JqueryController@barsQuery');
 
-Route::get('/lines', function () {
-    return view('lines');
-});
+Route::get('/lines', 'JqueryController@showlines');
+
 
 Route::get('/disc', function () {
     return view('disc');
 });
 
+Route::get('/d3', function() {
+   return view('map');
+});
+Route::get('/barstest', function() {
+   return view('d3bars');
+});
+
 Route::get('/test', 'JqueryController@jquery');
 Route::get('/ajaxget', 'JqueryController@get');
+Route::get('/lineinfo','JqueryController@linesget');
