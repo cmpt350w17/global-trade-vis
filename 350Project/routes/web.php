@@ -24,5 +24,12 @@ Route::get('/disc', function () {
     return view('disc');
 });
 
+Route::get('/d3', function() {
+   return view('map');
+});
+Route::get('/barstest', function() {
+   return view('d3bars');
+});
+
 Route::get('/test', 'JqueryController@jquery');
 Route::get('/ajaxget', 'JqueryController@get');
