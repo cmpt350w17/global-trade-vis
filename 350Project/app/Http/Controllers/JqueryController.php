@@ -11,7 +11,7 @@ class JqueryController extends Controller
       ->where('Reporter', '=','Canada')
       ->where('Commodity', '=', 'All Commodities')->where('Year', '=', '2015')
       ->orderBy ('Export', 'DESC')->take (11)->get();
-		 return view('map',compact('data'));
+		 return view('bars2',compact('data'));
 	 }
 
 
@@ -60,10 +60,10 @@ class JqueryController extends Controller
   }
    public function barsQuery() {
       $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')
-      ->where('Reporter', '=','Turkey')
-      ->where('Commodity', '=', 'Ores, slag and ash')->where('Partner', '=', 'China')
-      ->orderBy ('Year')->get();
-		 return view('bars',compact('data'));
+      ->where('Reporter', '=','France')
+      ->where('Year', '=', '2015')->where('Partner', '=', 'Germany')->get();
+
+       return view('bars',compact('data'));
 	 }
 
 }

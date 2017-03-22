@@ -18,10 +18,10 @@
 
 .centered {
 	position: relative;
-	left: 250px;
+	left: 300px;
 	margin-top: 30px;
-	height: 300px;
-	width: 400px;
+	height: 500px;
+	width: 600px;
 }
 
 body { font: 12px Arial;}
@@ -59,8 +59,8 @@ path {
 			<div class="container-fluid">
 				<div class="navbar-header"></div>
 				<ul class="nav navbar-nav">
-					<li> <a href="/">Map View</a></li>
-		         <li><a href="bars">Bar view</a></li>
+					<li> <a href="map">Map View</a></li>
+		         <li><a href="/">Bar view</a></li>
 					<li><a href="lines">Line view</a></li>
 		         <li><a href="disc">Disc view</a></li>
 				</ul>
