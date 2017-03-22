@@ -14,7 +14,9 @@
 Route::get('/', 'JqueryController@jquery');
 
 
-Route::get('/map', 'JqueryController@barsQuery');
+Route::get('/map', function() {
+   return view ('hmap');
+});
 
 Route::get('/lines', 'JqueryController@showlines');
 
