@@ -1,3 +1,7 @@
+@extends('layouts.master3')
+
+@section('content')
+
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
@@ -102,3 +106,4 @@ function computeTextRotation(d) {
 }
 
 </script>
+@stop

@@ -2,39 +2,39 @@
  "name": "World",
  "children": [
   {
-   "name": "North America",
+   "name": "N. America",
    "children": [
     {
      "name": "USA",
      "children": [
       {"name": "Manufactured Goods",
         "children": [
-       {"name": "Textiles", "size": 32909789794},
-       {"name": "Arms and Ammunition", "size": 69941662136},
-       {"name": "Pharmaceuticals", "size": 616387340188},
-       {"name": "Electronics", "size": 2945183374498},
-       {"name": "Iron and Steel", "size": 291893625478},
-       {"name": "Petroleum oil", "size": 70126309882},
-       {"name": "Vehicles", "size": 2008992464810}
+       {"name": "Textiles", "size": 16454894897},
+       {"name": "Arms and Ammunition", "size": 34970831068},
+       {"name": "Pharmaceuticals", "size": 308193670094},
+       {"name": "Electronics", "size": 1472591367531},
+       {"name": "Iron and Steel", "size": 145946812739},
+       {"name": "Petroleum oil", "size": 35063154941},
+       {"name": "Vehicles", "size": 1004496103161}
       ]
      },
       {"name": "Food Goods",
         "children": [
-       {"name": "Prepared Food", "size": 75078678446},
-       {"name": "Edible Meat", "size": 233922198898},
-       {"name": "Edible Fruit", "size": 194516427148},
-       {"name": "Edible Vegetables", "size": 66157785490},
-       {"name": "Cereal, flour, starch", "size": 58649629746},
-       {"name": "Coffee, Tea, Spices", "size": 17418221216}
+       {"name": "Prepared Food", "size": 37539339223},
+       {"name": "Edible Meat", "size": 116961099449},
+       {"name": "Edible Fruit", "size": 97258213574},
+       {"name": "Edible Vegetables", "size": 33078892745},
+       {"name": "Cereal, flour, starch", "size": 29324814873},
+       {"name": "Coffee, Tea, Spices", "size": 8709110608}
       ]
      },
       {"name": "Raw Goods",
         "children": [
-       {"name": "Wood", "size": 148259965980},
-       {"name": "Inorganic Chemicals", "size": 210756992572},
-       {"name": "Ores, Slag and Ash", "size": 98656156102},
-       {"name": "Precious Stones/ Metals", "size": 899511646154},
-       {"name": "Radioactive Elements", "size": 32469213198}
+       {"name": "Wood", "size": 74129982990},
+       {"name": "Inorganic Chemicals", "size": 49328078051},
+       {"name": "Ores, Slag and Ash", "size": 49328078051},
+       {"name": "Precious Stones/ Metals", "size": 449755823077},
+       {"name": "Radioactive Elements", "size": 16234606599}
       ]
      }
      ]
@@ -44,32 +44,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 3532817753},
+        {"name": "Arms and Ammunition", "size": 2037975076},
+        {"name": "Pharmaceuticals", "size": 46280686725},
+        {"name": "Electronics", "size": 150241170631},
+        {"name": "Iron and Steel", "size": 52752465714},
+        {"name": "Petroleum oil", "size": 468908212509},
+        {"name": "Vehicles", "size": 552348999127}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 11662248732},
+        {"name": "Edible Meat", "size": 37757710386},
+        {"name": "Edible Fruit", "size": 4358363808},
+        {"name": "Edible Vegetables", "size": 28507273397},
+        {"name": "Cereal, flour, starch", "size": 20621287468},
+        {"name": "Coffee, Tea, Spices", "size": 3630702990}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 116563682648},
+        {"name": "Inorganic Chemicals", "size": 37196684998},
+        {"name": "Ores, Slag and Ash", "size": 56190656969},
+        {"name": "Precious Stones/ Metals", "size": 135138289618},
+        {"name": "Radioactive Elements", "size": 14970974432}
        ]
       }
       ]
@@ -79,32 +79,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 8544093952},
+        {"name": "Arms and Ammunition", "size": 278046026},
+        {"name": "Pharmaceuticals", "size": 13824157913},
+        {"name": "Electronics", "size": 623012146072},
+        {"name": "Iron and Steel", "size": 27366417574},
+        {"name": "Petroleum oil", "size": 295559866041},
+        {"name": "Vehicles", "size": 533056914266}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 8101800536},
+        {"name": "Edible Meat", "size": 7712622150},
+        {"name": "Edible Fruit", "size": 24144026934},
+        {"name": "Edible Vegetables", "size": 40234356321},
+        {"name": "Cereal, flour, starch", "size": 9401789225},
+        {"name": "Coffee, Tea, Spices", "size": 5727197139}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 4043459330},
+        {"name": "Inorganic Chemicals", "size": 7607974224},
+        {"name": "Ores, Slag and Ash", "size": 22714391531},
+        {"name": "Precious Stones/ Metals", "size": 62888643833},
+        {"name": "Radioactive Elements", "size": 9179811}
        ]
       }
       ]
@@ -119,32 +119,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 170141949850},
+        {"name": "Arms and Ammunition", "size": 895895807},
+        {"name": "Pharmaceuticals", "size": 38227501472},
+        {"name": "Electronics", "size": 3353751993399},
+        {"name": "Iron and Steel", "size": 269770138972},
+        {"name": "Petroleum oil", "size": 19044469083},
+        {"name": "Vehicles", "size": 355064811639}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 50478118588},
+        {"name": "Edible Meat", "size": 9163953959},
+        {"name": "Edible Fruit", "size": 25956665472},
+        {"name": "Edible Vegetables", "size": 54557389908},
+        {"name": "Cereal, flour, starch", "size": 10638839592},
+        {"name": "Coffee, Tea, Spices", "size": 15272910430}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 88572338786},
+        {"name": "Inorganic Chemicals", "size": 97355042054},
+        {"name": "Ores, Slag and Ash", "size": 3587502786},
+        {"name": "Precious Stones/ Metals", "size": 237621418930},
+        {"name": "Radioactive Elements", "size": 1151799548}
        ]
       }
       ]
@@ -154,32 +154,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 2520623278},
+        {"name": "Arms and Ammunition", "size": 22738297},
+        {"name": "Pharmaceuticals", "size": 2915345579},
+        {"name": "Electronics", "size": 81647803374},
+        {"name": "Iron and Steel", "size": 8435195704},
+        {"name": "Petroleum oil", "size": 85257573536},
+        {"name": "Vehicles", "size": 28337597767}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 1913591061},
+        {"name": "Edible Meat", "size": 197443000},
+        {"name": "Edible Fruit", "size": 3537911316},
+        {"name": "Edible Vegetables", "size": 843596438},
+        {"name": "Cereal, flour, starch", "size": 3968199430},
+        {"name": "Coffee, Tea, Spices", "size": 14063618940}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 35783671855},
+        {"name": "Inorganic Chemicals", "size": 4113545596},
+        {"name": "Ores, Slag and Ash", "size": 40224043504},
+        {"name": "Precious Stones/ Metals", "size": 22146466405},
+        {"name": "Radioactive Elements", "size": 6545387}
        ]
       }
       ]
@@ -189,32 +189,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 2041436245},
+        {"name": "Arms and Ammunition", "size": 1505558059},
+        {"name": "Pharmaceuticals", "size": 28089736891},
+        {"name": "Electronics", "size": 1117894480832},
+        {"name": "Iron and Steel", "size": 273759481968},
+        {"name": "Petroleum oil", "size": 75522419},
+        {"name": "Vehicles", "size": 1254026591455}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 535230280},
+        {"name": "Edible Meat", "size": 513388165},
+        {"name": "Edible Fruit", "size": 853175860},
+        {"name": "Edible Vegetables", "size": 306144835},
+        {"name": "Cereal, flour, starch", "size": 3164232962},
+        {"name": "Coffee, Tea, Spices", "size": 607914650}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 1173393611},
+        {"name": "Inorganic Chemicals", "size": 33750763094},
+        {"name": "Ores, Slag and Ash", "size": 996724840},
+        {"name": "Precious Stones/ Metals", "size": 996724840},
+        {"name": "Radioactive Elements", "size": 996724840}
        ]
       }
       ]
@@ -224,32 +224,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 5725545438},
+        {"name": "Arms and Ammunition", "size": 2455400101},
+        {"name": "Pharmaceuticals", "size": 8812800045},
+        {"name": "Electronics", "size": 959553667411},
+        {"name": "Iron and Steel", "size": 166851478583},
+        {"name": "Petroleum oil", "size": 22447},
+        {"name": "Vehicles", "size": 482100181771}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 1548005474},
+        {"name": "Edible Meat", "size": 634808539},
+        {"name": "Edible Fruit", "size": 1299780857},
+        {"name": "Edible Vegetables", "size": 1245913051},
+        {"name": "Cereal, flour, starch", "size": 5496978291},
+        {"name": "Coffee, Tea, Spices", "size": 214890674}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 880879889},
+        {"name": "Inorganic Chemicals", "size": 22034456935},
+        {"name": "Ores, Slag and Ash", "size": 1146744786},
+        {"name": "Precious Stones/ Metals", "size": 42456833346},
+        {"name": "Radioactive Elements", "size": 59283755}
        ]
       }
       ]
@@ -259,32 +259,32 @@
      "children": [
        {"name": "Manufactured Goods",
          "children": [
-        {"name": "Textiles", "size": 3938},
-        {"name": "Arms and Ammunition", "size": 3812},
-        {"name": "Pharmaceuticals", "size": 6714},
-        {"name": "Electronics", "size": 6714},
-        {"name": "Iron and Steel", "size": 6714},
-        {"name": "Petroleum oil", "size": 6714},
-        {"name": "Vehicles", "size": 6714}
+        {"name": "Textiles", "size": 29867190058},
+        {"name": "Arms and Ammunition", "size": 342348942},
+        {"name": "Pharmaceuticals", "size": 65037376587},
+        {"name": "Electronics", "size": 67887006294},
+        {"name": "Iron and Steel", "size": 55363575062},
+        {"name": "Petroleum oil", "size": 120623928},
+        {"name": "Vehicles", "size": 77389838435}
        ]
       },
        {"name": "Food Goods",
          "children": [
-        {"name": "Prepared Food", "size": 3938},
-        {"name": "Edible Meat", "size": 3812},
-        {"name": "Edible Fruit", "size": 6714},
-        {"name": "Edible Vegetables", "size": 6714},
-        {"name": "Cereal, flour, starch", "size": 6714},
-        {"name": "Coffee, Tea, Spices", "size": 6714}
+        {"name": "Prepared Food", "size": 2818188194},
+        {"name": "Edible Meat", "size": 22685434628},
+        {"name": "Edible Fruit", "size": 11151829246},
+        {"name": "Edible Vegetables", "size": 7728977324},
+        {"name": "Cereal, flour, starch", "size": 2707698771},
+        {"name": "Coffee, Tea, Spices", "size": 19478654681}
        ]
       },
        {"name": "Raw Goods",
          "children": [
-        {"name": "Wood", "size": 3938},
-        {"name": "Inorganic Chemicals", "size": 3812},
-        {"name": "Ores, Slag and Ash", "size": 6714},
-        {"name": "Precious Stones/ Metals", "size": 6714},
-        {"name": "Radioactive Elements", "size": 6714}
+        {"name": "Wood", "size": 1989834491},
+        {"name": "Inorganic Chemicals", "size": 9767378764},
+        {"name": "Ores, Slag and Ash", "size": 24953359068},
+        {"name": "Precious Stones/ Metals", "size": 288467662571},
+        {"name": "Radioactive Elements", "size": 7503384}
        ]
       }
       ]
@@ -299,32 +299,31 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 3072572},
+         {"name": "Pharmaceuticals", "size": 22983979},
+         {"name": "Electronics", "size": 37720544},
+         {"name": "Iron and Steel", "size": 697588390},
+         {"name": "Petroleum oil", "size": 210130590151},
+         {"name": "Vehicles", "size": 31266488}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 10570043},
+         {"name": "Edible Meat", "size": 1218766},
+         {"name": "Edible Fruit", "size": 243995000},
+         {"name": "Edible Vegetables", "size": 65923228},
+         {"name": "Cereal, flour, starch", "size": 71989451},
+         {"name": "Coffee, Tea, Spices", "size": 215985}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 605596},
+         {"name": "Inorganic Chemicals", "size": 2999842701},
+         {"name": "Ores, Slag and Ash", "size": 36547315},
+         {"name": "Precious Stones/ Metals", "size": 32110279},
+         {"name": "Radioactive Elements", "size": 551548}
         ]
        }
        ]
@@ -334,32 +333,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 2244653151},
+         {"name": "Arms and Ammunition", "size": 3054025},
+         {"name": "Pharmaceuticals", "size": 1952818151},
+         {"name": "Electronics", "size": 7954238734},
+         {"name": "Iron and Steel", "size": 5792559508},
+         {"name": "Petroleum oil", "size": 17949147786},
+         {"name": "Vehicles", "size": 808446009}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 1997448124},
+         {"name": "Edible Meat", "size": 37809623},
+         {"name": "Edible Fruit", "size": 6463250985},
+         {"name": "Edible Vegetables", "size": 6538201400},
+         {"name": "Cereal, flour, starch", "size": 807425812},
+         {"name": "Coffee, Tea, Spices", "size": 408428216}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 291076361},
+         {"name": "Inorganic Chemicals", "size": 3210133296},
+         {"name": "Ores, Slag and Ash", "size": 80264745},
+         {"name": "Precious Stones/ Metals", "size": 6567377491},
+         {"name": "Radioactive Elements", "size": 83561}
         ]
        }
        ]
@@ -369,32 +368,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 769550982},
+         {"name": "Arms and Ammunition", "size": 123505},
+         {"name": "Pharmaceuticals", "size": 28452866},
+         {"name": "Electronics", "size": 220362332},
+         {"name": "Iron and Steel", "size": 105413884},
+         {"name": "Petroleum oil", "size": 496982101785},
+         {"name": "Vehicles", "size": 170454437}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 129549252},
+         {"name": "Edible Meat", "size": 21547939},
+         {"name": "Edible Fruit", "size": 1323308202},
+         {"name": "Edible Vegetables", "size": 9879726},
+         {"name": "Cereal, flour, starch", "size": 190800111},
+         {"name": "Coffee, Tea, Spices", "size": 282288679}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 460690809},
+         {"name": "Inorganic Chemicals", "size": 100694143},
+         {"name": "Ores, Slag and Ash", "size": 209604519},
+         {"name": "Precious Stones/ Metals", "size": 1832116},
+         {"name": "Radioactive Elements", "size": 1155421}
         ]
        }
        ]
@@ -404,32 +403,31 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 969072407},
+         {"name": "Pharmaceuticals", "size": 2590342878},
+         {"name": "Electronics", "size": 15155089515},
+         {"name": "Iron and Steel", "size": 50440727812},
+         {"name": "Petroleum oil", "size": 949732519},
+         {"name": "Vehicles", "size": 57130395089}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 4323609983},
+         {"name": "Edible Meat", "size": 1377434615},
+         {"name": "Edible Fruit", "size": 17193008388},
+         {"name": "Edible Vegetables", "size": 1061251747},
+         {"name": "Cereal, flour, starch", "size": 1236058156},
+         {"name": "Coffee, Tea, Spices", "size": 733105009}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 3852892761},
+         {"name": "Inorganic Chemicals", "size": 8467413654},
+         {"name": "Ores, Slag and Ash", "size": 70847339167},
+         {"name": "Precious Stones/ Metals", "size": 111954199700},
+         {"name": "Radioactive Elements", "size": 725870617}
         ]
        }
        ]
@@ -444,32 +442,31 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 193957437},
+         {"name": "Arms and Ammunition", "size": 29841264},
+         {"name": "Pharmaceuticals", "size": 236207760},
+         {"name": "Electronics", "size": 620359663},
+         {"name": "Iron and Steel", "size": 2530045893},
+         {"name": "Petroleum oil", "size": 201078874274},
+         {"name": "Vehicles", "size": 845042507}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 649933038},
+         {"name": "Edible Meat", "size": 60211633},
+         {"name": "Edible Fruit", "size": 5134986887},
+         {"name": "Edible Vegetables", "size": 1016264137},
+         {"name": "Cereal, flour, starch", "size": 708018262},
+         {"name": "Coffee, Tea, Spices", "size": 679696323}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 66928437},
+         {"name": "Inorganic Chemicals", "size": 1253750002},
+         {"name": "Ores, Slag and Ash", "size": 1449586640},
+         {"name": "Precious Stones/ Metals", "size": 766398748}
         ]
        }
        ]
@@ -479,32 +476,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 1026837000},
+         {"name": "Arms and Ammunition", "size": 3201923000},
+         {"name": "Pharmaceuticals", "size": 41717941000},
+         {"name": "Electronics", "size": 75624125000},
+         {"name": "Iron and Steel", "size": 1354362000},
+         {"name": "Petroleum oil", "size": 32242000},
+         {"name": "Vehicles", "size": 1643825000}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 2315992000},
+         {"name": "Edible Meat", "size": 136305000},
+         {"name": "Edible Fruit", "size": 3912798000},
+         {"name": "Edible Vegetables", "size": 4116534000},
+         {"name": "Cereal, flour, starch", "size": 660135000},
+         {"name": "Coffee, Tea, Spices", "size": 139093000}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 92350000},
+         {"name": "Inorganic Chemicals", "size": 8186537000},
+         {"name": "Ores, Slag and Ash", "size": 25381000},
+         {"name": "Precious Stones/ Metals", "size": 156075656000},
+         {"name": "Radioactive Elements", "size": 16365000}
         ]
        }
        ]
@@ -514,32 +511,31 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 332874706},
+         {"name": "Pharmaceuticals", "size": 2249621173},
+         {"name": "Electronics", "size": 8713323684},
+         {"name": "Iron and Steel", "size": 4808392591},
+         {"name": "Petroleum oil", "size": 1701453633898},
+         {"name": "Vehicles", "size": 8705157562}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 2761768407},
+         {"name": "Edible Meat", "size": 897269179},
+         {"name": "Edible Fruit", "size": 1067987108},
+         {"name": "Edible Vegetables", "size": 756416630},
+         {"name": "Cereal, flour, starch", "size": 2782808841},
+         {"name": "Coffee, Tea, Spices", "size": 231362235}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 313534907},
+         {"name": "Inorganic Chemicals", "size": 8301857435},
+         {"name": "Ores, Slag and Ash", "size": 561856278},
+         {"name": "Precious Stones/ Metals", "size": 6136470259},
+         {"name": "Radioactive Elements", "size": 16504103}
         ]
        }
        ]
@@ -549,32 +545,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 17378552350},
+         {"name": "Arms and Ammunition", "size": 2338568931},
+         {"name": "Pharmaceuticals", "size": 4775086013},
+         {"name": "Electronics", "size": 65584139645},
+         {"name": "Iron and Steel", "size": 68752778975},
+         {"name": "Petroleum oil", "size": 7938254},
+         {"name": "Vehicles", "size": 115141622951}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 13619157882},
+         {"name": "Edible Meat", "size": 2874442310},
+         {"name": "Edible Fruit", "size": 29480722435},
+         {"name": "Edible Vegetables", "size": 8152599808},
+         {"name": "Cereal, flour, starch", "size": 8707742252},
+         {"name": "Coffee, Tea, Spices", "size": 1089296124}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 4709589772},
+         {"name": "Inorganic Chemicals", "size": 7948621800},
+         {"name": "Ores, Slag and Ash", "size": 8439081585},
+         {"name": "Precious Stones/ Metals", "size": 55178179906},
+         {"name": "Radioactive Elements", "size": 30140821}
         ]
        }
        ]
@@ -589,32 +585,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 322571209},
+         {"name": "Arms and Ammunition", "size": 31470338},
+         {"name": "Pharmaceuticals", "size": 1824855185},
+         {"name": "Electronics", "size": 6909858218},
+         {"name": "Iron and Steel", "size": 3419674229},
+         {"name": "Petroleum oil", "size": 8112255588},
+         {"name": "Vehicles", "size": 1695758969}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 1738349623},
+         {"name": "Edible Meat", "size": 34803098485},
+         {"name": "Edible Fruit", "size": 10212527183},
+         {"name": "Edible Vegetables", "size": 2741532625},
+         {"name": "Cereal, flour, starch", "size": 4578713013},
+         {"name": "Coffee, Tea, Spices", "size": 39806514}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 19849552821},
+         {"name": "Inorganic Chemicals", "size": 134372001},
+         {"name": "Ores, Slag and Ash", "size": 288319719},
+         {"name": "Precious Stones/ Metals", "size": 4452640957},
+         {"name": "Radioactive Elements", "size": 791430}
         ]
        }
        ]
@@ -624,32 +620,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 889674260},
+         {"name": "Arms and Ammunition", "size": 554345779},
+         {"name": "Pharmaceuticals", "size": 24646968343},
+         {"name": "Electronics", "size": 23337617509},
+         {"name": "Iron and Steel", "size": 11703263687},
+         {"name": "Petroleum oil", "size": 65922371122},
+         {"name": "Vehicles", "size": 25211961393}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 1664385742},
+         {"name": "Edible Meat", "size": 62373105968},
+         {"name": "Edible Fruit", "size": 6744551644},
+         {"name": "Edible Vegetables", "size": 7657578096},
+         {"name": "Cereal, flour, starch", "size": 4420024229},
+         {"name": "Coffee, Tea, Spices", "size": 347721087}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 9672164418},
+         {"name": "Inorganic Chemicals", "size": 45756277109},
+         {"name": "Ores, Slag and Ash", "size": 422780500468},
+         {"name": "Precious Stones/ Metals", "size": 106846754274},
+         {"name": "Radioactive Elements", "size": 110566047}
         ]
        }
        ]
@@ -657,39 +653,39 @@
     ]
   },
   {
-   "name": "South America",
+   "name": "S. America",
    "children": [
      {
       "name": "Argentina",
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 110199655},
+         {"name": "Arms and Ammunition", "size": 124004983},
+         {"name": "Pharmaceuticals", "size": 6437342726},
+         {"name": "Electronics", "size": 3720149838},
+         {"name": "Iron and Steel", "size": 4576834166},
+         {"name": "Petroleum oil", "size": 20992863754},
+         {"name": "Vehicles", "size": 59374051745}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 8745458729},
+         {"name": "Edible Meat", "size": 14277829648},
+         {"name": "Edible Fruit", "size": 9197860776},
+         {"name": "Edible Vegetables", "size": 4337559444},
+         {"name": "Cereal, flour, starch", "size": 2992272259},
+         {"name": "Coffee, Tea, Spices", "size": 1374892321}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 1951270277},
+         {"name": "Inorganic Chemicals", "size": 2617398965},
+         {"name": "Ores, Slag and Ash", "size": 10817004190},
+         {"name": "Precious Stones/ Metals", "size": 13928813321},
+         {"name": "Radioactive Elements", "size": 60695041}
         ]
        }
        ]
@@ -699,32 +695,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 1774899270},
+         {"name": "Arms and Ammunition", "size": 2342345194},
+         {"name": "Pharmaceuticals", "size": 9719487804},
+         {"name": "Electronics", "size": 42256290416},
+         {"name": "Iron and Steel", "size": 76864143542},
+         {"name": "Petroleum oil", "size": 101535930525},
+         {"name": "Vehicles", "size": 95749633982}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 19180846494},
+         {"name": "Edible Meat", "size": 94484663725},
+         {"name": "Edible Fruit", "size": 6908983579},
+         {"name": "Edible Vegetables", "size": 373475420},
+         {"name": "Cereal, flour, starch", "size": 1438817026},
+         {"name": "Coffee, Tea, Spices", "size": 44948524097}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 19925003287},
+         {"name": "Inorganic Chemicals", "size": 21828217184},
+         {"name": "Ores, Slag and Ash", "size": 191809084870},
+         {"name": "Precious Stones/ Metals", "size": 19969713260},
+         {"name": "Radioactive Elements", "size": 4672315}
         ]
        }
        ]
@@ -734,32 +730,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 7920215},
+         {"name": "Arms and Ammunition", "size": 549958},
+         {"name": "Pharmaceuticals", "size": 237985785},
+         {"name": "Electronics", "size": 381272903},
+         {"name": "Iron and Steel", "size": 6836257254},
+         {"name": "Petroleum oil", "size": 347399362121},
+         {"name": "Vehicles", "size": 1124551926}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 62242963},
+         {"name": "Edible Meat", "size": 15188294},
+         {"name": "Edible Fruit", "size": 86470694},
+         {"name": "Edible Vegetables", "size": 16576861},
+         {"name": "Cereal, flour, starch", "size": 106541620},
+         {"name": "Coffee, Tea, Spices", "size": 33441211}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 71512198},
+         {"name": "Inorganic Chemicals", "size": 1440985805},
+         {"name": "Ores, Slag and Ash", "size": 1395139291},
+         {"name": "Precious Stones/ Metals", "size": 122713994},
+         {"name": "Radioactive Elements", "size": 507427}
         ]
        }
        ]
@@ -769,32 +765,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 733534054},
+         {"name": "Arms and Ammunition", "size": 46375907},
+         {"name": "Pharmaceuticals", "size": 3687528620},
+         {"name": "Electronics", "size": 3613574010},
+         {"name": "Iron and Steel", "size": 7285131403},
+         {"name": "Petroleum oil", "size": 137234160767},
+         {"name": "Vehicles", "size": 4528783618}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 396053085},
+         {"name": "Edible Meat", "size": 1057750500},
+         {"name": "Edible Fruit", "size": 7289998629},
+         {"name": "Edible Vegetables", "size": 225980814},
+         {"name": "Cereal, flour, starch", "size": 933820972},
+         {"name": "Coffee, Tea, Spices", "size": 18906520322}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 370243160},
+         {"name": "Inorganic Chemicals", "size": 1023096839},
+         {"name": "Ores, Slag and Ash", "size": 1920953},
+         {"name": "Precious Stones/ Metals", "size": 16092531023},
+         {"name": "Radioactive Elements", "size": 1920953}
         ]
        }
        ]
@@ -809,32 +805,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 7091522333},
+         {"name": "Arms and Ammunition", "size": 2415693222},
+         {"name": "Pharmaceuticals", "size": 260893418066},
+         {"name": "Electronics", "size": 410027195391},
+         {"name": "Iron and Steel", "size": 137952420442},
+         {"name": "Petroleum oil", "size": 918901191},
+         {"name": "Vehicles", "size": 462635442963}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 16504845839},
+         {"name": "Edible Meat", "size": 39006718543},
+         {"name": "Edible Fruit", "size": 18311324398},
+         {"name": "Edible Vegetables", "size": 20207996991},
+         {"name": "Cereal, flour, starch", "size": 32646928984},
+         {"name": "Coffee, Tea, Spices", "size": 5376428864}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 25865966331},
+         {"name": "Inorganic Chemicals", "size": 41478496540},
+         {"name": "Ores, Slag and Ash", "size": 2240816450},
+         {"name": "Precious Stones/ Metals", "size": 47321913977},
+         {"name": "Radioactive Elements", "size": 16139771399}
         ]
        }
        ]
@@ -844,32 +840,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 20966896635},
+         {"name": "Arms and Ammunition", "size": 4480390577},
+         {"name": "Pharmaceuticals", "size": 517635534181},
+         {"name": "Electronics", "size": 1143452465052},
+         {"name": "Iron and Steel", "size": 239180405497},
+         {"name": "Petroleum oil", "size": 1191302695},
+         {"name": "Vehicles", "size": 1883830479733}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 23535228627},
+         {"name": "Edible Meat", "size": 69240210261},
+         {"name": "Edible Fruit", "size": 13729345303},
+         {"name": "Edible Vegetables", "size": 9423412323},
+         {"name": "Cereal, flour, starch", "size": 47536289478},
+         {"name": "Coffee, Tea, Spices", "size": 21453590316}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 71620299221},
+         {"name": "Inorganic Chemicals", "size": 79859700514},
+         {"name": "Ores, Slag and Ash", "size": 3259251539},
+         {"name": "Precious Stones/ Metals", "size": 110102550462},
+         {"name": "Radioactive Elements", "size": 7783379056}
         ]
        }
        ]
@@ -879,32 +875,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 7350134142},
+         {"name": "Arms and Ammunition", "size": 9278801458},
+         {"name": "Pharmaceuticals", "size": 153030362142},
+         {"name": "Electronics", "size": 255040017714},
+         {"name": "Iron and Steel", "size": 106619251898},
+         {"name": "Petroleum oil", "size": 3272977926},
+         {"name": "Vehicles", "size": 315052408940}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 29816309693},
+         {"name": "Edible Meat", "size": 18504260090},
+         {"name": "Edible Fruit", "size": 32559018072},
+         {"name": "Edible Vegetables", "size": 13470921997},
+         {"name": "Cereal, flour, starch", "size": 38821972596},
+         {"name": "Coffee, Tea, Spices", "size": 9865753634}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 17244444397},
+         {"name": "Inorganic Chemicals", "size": 15558870989},
+         {"name": "Ores, Slag and Ash", "size": 2143178643},
+         {"name": "Precious Stones/ Metals", "size": 108451836575},
+         {"name": "Radioactive Elements", "size": 60568550}
         ]
        }
        ]
@@ -914,32 +910,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 494369749},
+         {"name": "Arms and Ammunition", "size": 14103715833},
+         {"name": "Pharmaceuticals", "size": 3603660372},
+         {"name": "Electronics", "size": 30110945787},
+         {"name": "Iron and Steel", "size": 30110945787},
+         {"name": "Petroleum oil", "size": 1035365601953},
+         {"name": "Vehicles", "size": 26585814827}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 1181134931},
+         {"name": "Edible Meat", "size": 455242052},
+         {"name": "Edible Fruit", "size": 692516648},
+         {"name": "Edible Vegetables", "size": 1726938875},
+         {"name": "Cereal, flour, starch", "size": 3017743787},
+         {"name": "Coffee, Tea, Spices", "size": 838188573}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 55261248169},
+         {"name": "Inorganic Chemicals", "size": 41350809468},
+         {"name": "Ores, Slag and Ash", "size": 20161970178},
+         {"name": "Precious Stones/ Metals", "size": 63585689154},
+         {"name": "Radioactive Elements", "size": 2573468776}
         ]
        }
        ]
@@ -949,32 +945,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 4706204894},
+         {"name": "Arms and Ammunition", "size": 1617677639},
+         {"name": "Pharmaceuticals", "size": 84556353335},
+         {"name": "Electronics", "size": 138970600392},
+         {"name": "Iron and Steel", "size": 67888624179},
+         {"name": "Petroleum oil", "size": 2344858456},
+         {"name": "Vehicles", "size": 414674560687}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 24386954759},
+         {"name": "Edible Meat", "size": 35791729577},
+         {"name": "Edible Fruit", "size": 68237667178},
+         {"name": "Edible Vegetables", "size": 48541822965},
+         {"name": "Cereal, flour, starch", "size": 10731731059},
+         {"name": "Coffee, Tea, Spices", "size": 3469105687}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 12221365819},
+         {"name": "Inorganic Chemicals", "size": 10075355458},
+         {"name": "Ores, Slag and Ash", "size": 12050065547},
+         {"name": "Precious Stones/ Metals", "size": 20844047785},
+         {"name": "Radioactive Elements", "size": 96042852}
         ]
        }
        ]
@@ -984,32 +980,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 8581626893},
+         {"name": "Arms and Ammunition", "size": 8385883467},
+         {"name": "Pharmaceuticals", "size": 261129225238},
+         {"name": "Electronics", "size": 387690715748},
+         {"name": "Iron and Steel", "size": 79547027341},
+         {"name": "Petroleum oil", "size": 218333057200},
+         {"name": "Vehicles", "size": 399812464309}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 4820278735},
+         {"name": "Edible Meat", "size": 16941094782},
+         {"name": "Edible Fruit", "size": 2255953466},
+         {"name": "Edible Vegetables", "size": 4312843631},
+         {"name": "Cereal, flour, starch", "size": 18814157909},
+         {"name": "Coffee, Tea, Spices", "size": 4400989967}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 5696508667},
+         {"name": "Inorganic Chemicals", "size": 32452324094},
+         {"name": "Ores, Slag and Ash", "size": 1847481611},
+         {"name": "Precious Stones/ Metals", "size": 382895635890},
+         {"name": "Radioactive Elements", "size": 1603719050}
         ]
        }
        ]
@@ -1019,32 +1015,32 @@
       "children": [
         {"name": "Manufactured Goods",
           "children": [
-         {"name": "Textiles", "size": 3938},
-         {"name": "Arms and Ammunition", "size": 3812},
-         {"name": "Pharmaceuticals", "size": 6714},
-         {"name": "Electronics", "size": 6714},
-         {"name": "Iron and Steel", "size": 6714},
-         {"name": "Petroleum oil", "size": 6714},
-         {"name": "Vehicles", "size": 6714}
+         {"name": "Textiles", "size": 575253891},
+         {"name": "Arms and Ammunition", "size": 141728891},
+         {"name": "Pharmaceuticals", "size": 9796382221},
+         {"name": "Electronics", "size": 10334970770},
+         {"name": "Iron and Steel", "size": 5200757242},
+         {"name": "Petroleum oil", "size": 453011052},
+         {"name": "Vehicles", "size": 1739788979}
         ]
        },
         {"name": "Food Goods",
           "children": [
-         {"name": "Prepared Food", "size": 3938},
-         {"name": "Edible Meat", "size": 3812},
-         {"name": "Edible Fruit", "size": 6714},
-         {"name": "Edible Vegetables", "size": 6714},
-         {"name": "Cereal, flour, starch", "size": 6714},
-         {"name": "Coffee, Tea, Spices", "size": 6714}
+         {"name": "Prepared Food", "size": 8871248576},
+         {"name": "Edible Meat", "size": 463673534},
+         {"name": "Edible Fruit", "size": 7828194096},
+         {"name": "Edible Vegetables", "size": 1591279386},
+         {"name": "Cereal, flour, starch", "size": 1641680037},
+         {"name": "Coffee, Tea, Spices", "size": 165305119}
         ]
        },
         {"name": "Raw Goods",
           "children": [
-         {"name": "Wood", "size": 3938},
-         {"name": "Inorganic Chemicals", "size": 3812},
-         {"name": "Ores, Slag and Ash", "size": 6714},
-         {"name": "Precious Stones/ Metals", "size": 6714},
-         {"name": "Radioactive Elements", "size": 6714}
+         {"name": "Wood", "size": 721723126},
+         {"name": "Inorganic Chemicals", "size": 1384507511},
+         {"name": "Ores, Slag and Ash", "size": 585679718},
+         {"name": "Precious Stones/ Metals", "size": 875166668},
+         {"name": "Radioactive Elements", "size": 415700}
         ]
        }
        ]
