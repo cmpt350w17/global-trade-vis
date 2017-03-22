@@ -17,6 +17,7 @@
 }
 
 .centered {
+
 	position: relative;
 	left: 300px;
 	margin-top: 30px;
@@ -24,7 +25,12 @@
 	width: 600px;
 }
 
-body { font: 12px Arial;}
+html, body {
+	background-color: red;
+	font: 12px Arial;
+
+
+}
 path {
     stroke: steelblue;
     stroke-width: 2;
