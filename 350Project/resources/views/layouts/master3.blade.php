@@ -26,7 +26,7 @@
 }
 
 html, body {
-	background-color: red;
+
 	font: 12px Arial;
 
 
