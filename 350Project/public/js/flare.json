@@ -1,0 +1,1055 @@
+{
+ "name": "World",
+ "children": [
+  {
+   "name": "North America",
+   "children": [
+    {
+     "name": "USA",
+     "children": [
+      {"name": "Manufactured Goods",
+        "children": [
+       {"name": "Textiles", "size": 32909789794},
+       {"name": "Arms and Ammunition", "size": 69941662136},
+       {"name": "Pharmaceuticals", "size": 616387340188},
+       {"name": "Electronics", "size": 2945183374498},
+       {"name": "Iron and Steel", "size": 291893625478},
+       {"name": "Petroleum oil", "size": 70126309882},
+       {"name": "Vehicles", "size": 2008992464810}
+      ]
+     },
+      {"name": "Food Goods",
+        "children": [
+       {"name": "Prepared Food", "size": 75078678446},
+       {"name": "Edible Meat", "size": 233922198898},
+       {"name": "Edible Fruit", "size": 194516427148},
+       {"name": "Edible Vegetables", "size": 66157785490},
+       {"name": "Cereal, flour, starch", "size": 58649629746},
+       {"name": "Coffee, Tea, Spices", "size": 17418221216}
+      ]
+     },
+      {"name": "Raw Goods",
+        "children": [
+       {"name": "Wood", "size": 148259965980},
+       {"name": "Inorganic Chemicals", "size": 210756992572},
+       {"name": "Ores, Slag and Ash", "size": 98656156102},
+       {"name": "Precious Stones/ Metals", "size": 899511646154},
+       {"name": "Radioactive Elements", "size": 32469213198}
+      ]
+     }
+     ]
+    },
+    {
+     "name": "Canada",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Mexico",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    }
+   ]
+  },
+  {
+   "name": "Asia",
+   "children": [
+    {
+     "name": "China",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Indonesia",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Japan",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Korea",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "India",
+     "children": [
+       {"name": "Manufactured Goods",
+         "children": [
+        {"name": "Textiles", "size": 3938},
+        {"name": "Arms and Ammunition", "size": 3812},
+        {"name": "Pharmaceuticals", "size": 6714},
+        {"name": "Electronics", "size": 6714},
+        {"name": "Iron and Steel", "size": 6714},
+        {"name": "Petroleum oil", "size": 6714},
+        {"name": "Vehicles", "size": 6714}
+       ]
+      },
+       {"name": "Food Goods",
+         "children": [
+        {"name": "Prepared Food", "size": 3938},
+        {"name": "Edible Meat", "size": 3812},
+        {"name": "Edible Fruit", "size": 6714},
+        {"name": "Edible Vegetables", "size": 6714},
+        {"name": "Cereal, flour, starch", "size": 6714},
+        {"name": "Coffee, Tea, Spices", "size": 6714}
+       ]
+      },
+       {"name": "Raw Goods",
+         "children": [
+        {"name": "Wood", "size": 3938},
+        {"name": "Inorganic Chemicals", "size": 3812},
+        {"name": "Ores, Slag and Ash", "size": 6714},
+        {"name": "Precious Stones/ Metals", "size": 6714},
+        {"name": "Radioactive Elements", "size": 6714}
+       ]
+      }
+      ]
+    }
+   ]
+  },
+  {
+   "name": "Africa",
+   "children": [
+     {
+      "name": "Algeria",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Egypt",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Nigeria",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "South Africa",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "Middle East",
+   "children": [
+     {
+      "name": "Iran",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Israel",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Saudi Arabia",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Turkey",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "Oceania",
+   "children": [
+     {
+      "name": "New Zealand",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Australia",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "South America",
+   "children": [
+     {
+      "name": "Argentina",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Brazil",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Venezuela",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Colombia",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "Europe",
+   "children": [
+     {
+      "name": "France",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Germany",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Italy",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Russia",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Spain",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "United Kingdom",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Greece",
+      "children": [
+        {"name": "Manufactured Goods",
+          "children": [
+         {"name": "Textiles", "size": 3938},
+         {"name": "Arms and Ammunition", "size": 3812},
+         {"name": "Pharmaceuticals", "size": 6714},
+         {"name": "Electronics", "size": 6714},
+         {"name": "Iron and Steel", "size": 6714},
+         {"name": "Petroleum oil", "size": 6714},
+         {"name": "Vehicles", "size": 6714}
+        ]
+       },
+        {"name": "Food Goods",
+          "children": [
+         {"name": "Prepared Food", "size": 3938},
+         {"name": "Edible Meat", "size": 3812},
+         {"name": "Edible Fruit", "size": 6714},
+         {"name": "Edible Vegetables", "size": 6714},
+         {"name": "Cereal, flour, starch", "size": 6714},
+         {"name": "Coffee, Tea, Spices", "size": 6714}
+        ]
+       },
+        {"name": "Raw Goods",
+          "children": [
+         {"name": "Wood", "size": 3938},
+         {"name": "Inorganic Chemicals", "size": 3812},
+         {"name": "Ores, Slag and Ash", "size": 6714},
+         {"name": "Precious Stones/ Metals", "size": 6714},
+         {"name": "Radioactive Elements", "size": 6714}
+        ]
+       }
+       ]
+     }
+    ]
+  }
+ ]
+}
