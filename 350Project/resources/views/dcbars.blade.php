@@ -3,9 +3,15 @@
 @section('content')
 <script>
 
-
 //var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 $(document).ready(function() {
+	function resetData(ndx, dimensions) {
+    var bChartFilters = bChart.filters();
+    bChart.filter(null);
+    ndx.remove();
+    bChart.filter([bChartFilters]);
+    console.log(bChart.filters());
+}
 	var country = 'Canada';
 	var commodity = 'All Commodities';
 	var year = '2015';
@@ -23,58 +29,22 @@ $(document).ready(function() {
 					 console.log('success');
 					 console.log(data);
 					 data.shift();
-					 var max = get_max(data);
-					 console.log(max);
-					 x.domain(data.map(function(d) { return d.Partner; }));
-					 if (max == "Export") {
-						  y.domain([0, d3.max(data, function(d) { return d.Export; })]);
-					 } else {
-						  y.domain([0, d3.max(data, function(d) { return d.Import; })]);
-					 }
-
-			  	  //var svg = d3.select("body");
-
-
-
-
-			  	  svg.select(".x.axis") // change the x axis
-			  	  		.transition()
-			  			.duration(500)
-			  			.call(xAxis)
-			  			.selectAll("text")
-
-			  			.style("text-anchor", "end")
-			  	      .attr("dx", "-.8em")
-			  	      .attr("dy", "-.55em")
-			  	      .attr("transform", "rotate(-90)" );
-
-			  	  svg.select(".y.axis") // change the y axis
-			  	  		.transition()
-			  			.duration(500)
-			  			.call(yAxis);
-
-
-
-					 var rect = svg.selectAll(".bar1").data(data);
-
-	  				 rect.transition().duration(750)
-	  				 .attr("y", function(d) { return y(d.Export); })
-	  				 .attr("height", function(d) { return height - y(d.Export); });
-
-	  				 rect = svg.selectAll(".bar2").data(data);
-	  				 rect.transition().duration(750)
-	  				 //.attr("x", function(d) { return x(d.Partner) + 22; })
-	  				 .attr("y", function(d) { return y(d.Import); })
-	  				 .attr("height", function(d) { return height - y(d.Import); });
+					 var ndx = crossfilter(data);
+ 					//print_filter(data);
+ 					//var Exports = ndx.dimension(function(d) { return d.Export; });
+ 					var Countries = ndx.dimension(function(d) { return d.Partner });
+ 					var test = Countries.group().reduceSum(function(d) { return d.Export });
+					bChart
+					.dimension(Countries)
+					.group(test);
+					dc.redrawAll();
 
 
 				}});
 
-		});
 	});
-
+});
 </script>
-<!-- Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" id="sidebar">
 	<h4 class="w3-bar-item">Global Trade Vis</h4>
 	<form method="GET" id="frm">
@@ -139,88 +109,45 @@ $(document).ready(function() {
 </div>
 @stop
 @section('stuff')
-
 	<script>
+	function print_filter(filter) {
+		var f=eval(filter);
+		if (typeof(f.length) != "undefined") {}else{}
+		if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
+		if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
+		console.log(filter+"("+f.length+") = "+JSON.stringify(f).replace("[","[\n\t").replace(/}\,/g,"},\n\t").replace("]","\n]"));
+	}
 	var data = <?php echo json_encode($data)?>;
+	//console.log(data);
 	data.shift();
-	var max = get_max(data);
-	console.log(max);
-	var margin = {top: 20, right: 20, bottom: 200, left: 50},
-	    width = 500 - margin.left - margin.right,
-	    height = 480 - margin.top - margin.bottom;
+	var ndx = crossfilter(data);
+	//print_filter(data);
+	//var Exports = ndx.dimension(function(d) { return d.Export; });
+	var Countries = ndx.dimension(function(d) { return d.Partner });
+	var test = Countries.group().reduceSum(function(d) { return d.Export });
+	//var minExport = Exports.bottom(1)[0].Year;
+	//var maxExport = Exports.top(1)[0].Year;
+	var bChart  = dc.barChart("#centered");
+	bChart
+		.width(500).height(350)
+		.margins({top: 10, right: 10, bottom: 150, left: 50})
+		.dimension(Countries)
+		.group(test)
+		.x(d3.scale.ordinal())
+		.xUnits(dc.units.ordinal)
+		.on('renderlet', function(chart) {
+			chart.selectAll("g.x text")
+			.transition(500)
+			.attr('transform', "rotate(-90)")
+			.style("text-anchor", "end")
+			.attr("dx", "-.8em")
+			.attr("dy", "-.55em");
 
-	// Parse the date / time
-	//var	parseDate = d3.time.format("%Y").parse;
+		});
+	bChart.xAxis().ticks(5);
+	bChart.yAxis().tickFormat(d3.format('2s'));
 
-	var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);
-
-	var y = d3.scale.linear().range([height, 0]);
-
-	var xAxis = d3.svg.axis()
-	    .scale(x)
-	    .orient("bottom")
-	    .ticks(10);
-
-	var yAxis = d3.svg.axis()
-	    .scale(y)
-	    .orient("left")
-	    .ticks(5)
-		 .tickFormat(d3.format("2s"));
-
-	var svg = d3.select(".centered").append("svg")
-	    .attr("width", width + margin.left + margin.right)
-	    .attr("height", height + margin.top + margin.bottom)
-	    .append("g")
-	    .attr("transform",
-	          "translate(" + margin.left + "," + margin.top + ")");
-
-
-
-
-	  x.domain(data.map(function(d) { return d.Partner; }));
-	  if (max == "Export") {
-			  y.domain([0, d3.max(data, function(d) { return d.Export; })]);
-	  } else {
-		  y.domain([0, d3.max(data, function(d) { return d.Import; })]);
-	  }
-
-	  svg.append("g")
-	      .attr("class", "x axis")
-	      .attr("transform", "translate(0," + height + ")")
-	      .call(xAxis)
-	      .selectAll("text")
-	      .style("text-anchor", "end")
-	      .attr("dx", "-.8em")
-	      .attr("dy", "-.55em")
-	      .attr("transform", "rotate(-90)" );
-
-	  svg.append("g")
-	      .attr("class", "y axis")
-	      .call(yAxis)
-	      .append("text")
-	      .attr("transform", "rotate(-90)")
-	      .attr("y", 6)
-	      .attr("dy", ".71em")
-	      .style("text-anchor", "end")
-
-
-			var bars = svg.selectAll("bars").data(data).enter();
-
-	 			bars.append("rect")
-	 			.attr("class","bar1")
-	 			.style("fill", "steelblue")
-	 	      .attr("x", function(d) { return x(d.Partner); })
-	 	      .attr("width", x.rangeBand()/2)
-	 	      .attr("y", function(d) { return y(d.Export); })
-	 	      .attr("height", function(d) { return height - y(d.Export); });
-	 			bars.append("rect")
-	 			.attr("class","bar2")
-	 			.style("fill", "#E3550E")
-	 	      .attr("x", function(d) { return x(d.Partner) + 19.2; })
-	 	      .attr("width", x.rangeBand()/2)
-	 			.attr("y", function(d) { return y(d.Import); })
-	 	      .attr("height", function(d) { return height - y(d.Import); });
-
+	dc.renderAll();
 	</script>
 
 @stop
