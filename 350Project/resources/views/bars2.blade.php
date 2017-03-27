@@ -21,7 +21,7 @@ $(document).ready(function() {
 				 data: { 'country': country, 'commodity': commodity, 'year': year},
 				 success: function(data) {
 					 console.log('success');
-					 console.log(data);
+					 //console.log(data);
 					 data.shift();
 					 var max = get_max(data);
 					 console.log(max);
@@ -144,9 +144,9 @@ $(document).ready(function() {
 	var data = <?php echo json_encode($data)?>;
 	data.shift();
 	var max = get_max(data);
-	console.log(max);
-	var margin = {top: 20, right: 20, bottom: 200, left: 50},
-	    width = 500 - margin.left - margin.right,
+	//console.log(max);
+	var margin = {top: 20, right: 100, bottom: 200, left: 100},
+	    width = 700 - margin.left - margin.right,
 	    height = 480 - margin.top - margin.bottom;
 
 	// Parse the date / time
@@ -179,7 +179,7 @@ $(document).ready(function() {
 
 	  x.domain(data.map(function(d) { return d.Partner; }));
 	  if (max == "Export") {
-			  y.domain([0, d3.max(data, function(d) { return d.Export; })]);
+	  	  y.domain([0, d3.max(data, function(d) { return d.Export; })]);
 	  } else {
 		  y.domain([0, d3.max(data, function(d) { return d.Import; })]);
 	  }
@@ -203,23 +203,56 @@ $(document).ready(function() {
 	      .attr("dy", ".71em")
 	      .style("text-anchor", "end")
 
+			// Color legend.
+	      var colorScale = d3.scale.ordinal()
+	        .domain([ "Exports", "Imports" ])
+	        .range(["#0E40E3","#B90EE3"]);
 
-			var bars = svg.selectAll("bars").data(data).enter();
+	      var colorLegend = d3.legend.color()
+	        .labelFormat(d3.format(".0f"))
+	        .scale(colorScale)
+	        .shapePadding(5)
+	        .shapeWidth(25)
+	        .shapeHeight(20)
+	        .labelOffset(12);
 
-	 			bars.append("rect")
+	      svg.append("g")
+	        .attr("transform", "translate(520, 60)")
+	        .call(colorLegend);
+
+	 svg.append("text")
+	       .attr("transform", "rotate(-90)")
+	       .attr("y", -70)
+	       .attr("x", margin.top - (height / 3))
+	       .attr("dy", ".71em")
+			 .text("USD ($)");
+
+	 svg.append("text")
+		    .attr("x", (width / 2))
+		    .attr("y", 0 - (margin.top / 2.5))
+		    .attr("text-anchor", "middle")
+		    .style("font-size", "16px")
+		    .style("text-decoration", "underline")
+		    .text("Top 10 Trading Partners");
+
+	  var bars = svg.selectAll("bars").data(data).enter();
+
+	  bars.append("rect")
 	 			.attr("class","bar1")
-	 			.style("fill", "steelblue")
+	 			.style("fill", "#0E40E3")
 	 	      .attr("x", function(d) { return x(d.Partner); })
 	 	      .attr("width", x.rangeBand()/2)
 	 	      .attr("y", function(d) { return y(d.Export); })
 	 	      .attr("height", function(d) { return height - y(d.Export); });
-	 			bars.append("rect")
+	  bars.append("rect")
 	 			.attr("class","bar2")
-	 			.style("fill", "#E3550E")
-	 	      .attr("x", function(d) { return x(d.Partner) + 19.2; })
+	 			.style("fill", "#B90EE3")
+	 	      .attr("x", function(d) { return x(d.Partner) + 22.2; })
 	 	      .attr("width", x.rangeBand()/2)
 	 			.attr("y", function(d) { return y(d.Import); })
 	 	      .attr("height", function(d) { return height - y(d.Import); });
+
+
 
 	</script>
 
