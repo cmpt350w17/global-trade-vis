@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', 'JqueryController@jquery');
+Route::get('/bars', 'JqueryController@jquery');
 
 
-Route::get('/map', function() {
+Route::get('/', function() {
    return view ('hmap');
 });
 

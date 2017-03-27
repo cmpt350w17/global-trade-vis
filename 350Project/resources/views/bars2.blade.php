@@ -8,13 +8,95 @@
 $(document).ready(function() {
 	var country = 'Canada';
 	var commodity = 'All Commodities';
-	var year = '2015';
+	var year = '1997';
+	var amts=["1997","2000","2003","2006","2009","2011","2012","2013","2014","2015"];
+
+
+	$( function() {
+		$('#slider').slider({
+      min:0,
+      max:amts.length-1,
+      step:1,
+      value:0,
+
+      change:function(event, ui){
+          //console.log(amts[$(this).slider("value")]);
+          //alert($(this).slider("value"));
+			 $('#amount').val(amts[$(this).slider("value")]);
+			 year = amts[$(this).slider("value")];
+			 console.log(year);
+
+			 $.ajax({
+					  type: 'GET',
+					  url: '{!!URL::to('ajaxget')!!}',
+					  data: { 'country': country, 'commodity': commodity, 'year': year},
+					  success: function(data) {
+						  console.log('success');
+						  //console.log(data);
+						  data.shift();
+						  var max = get_max(data);
+						  console.log(max);
+						  x.domain(data.map(function(d) { return d.Partner; }));
+						  if (max == "Export") {
+								y.domain([0, d3.max(data, function(d) { return d.Export; })]);
+						  } else {
+								y.domain([0, d3.max(data, function(d) { return d.Import; })]);
+						  }
+
+						//var svg = d3.select("body");
+
+
+
+
+						svg.select(".x.axis") // change the x axis
+							 .transition()
+							 .duration(500)
+							 .call(xAxis)
+							 .selectAll("text")
+
+							 .style("text-anchor", "end")
+							 .attr("dx", "-.8em")
+							 .attr("dy", "-.55em")
+							 .attr("transform", "rotate(-90)" );
+
+						svg.select(".y.axis") // change the y axis
+							 .transition()
+							 .duration(500)
+							 .call(yAxis);
+
+
+
+						  var rect = svg.selectAll(".bar1").data(data);
+
+						  rect.transition().duration(750)
+						  .attr("y", function(d) { return y(d.Export); })
+						  .attr("height", function(d) { return height - y(d.Export); });
+
+						  rect = svg.selectAll(".bar2").data(data);
+						  rect.transition().duration(750)
+						  //.attr("x", function(d) { return x(d.Partner) + 22; })
+						  .attr("y", function(d) { return y(d.Import); })
+						  .attr("height", function(d) { return height - y(d.Import); });
+
+
+					 }});
+
+      },
+      slide:function(event, ui){
+          $('#amount').val(amts[$(this).slider("value")]);
+      }
+  });
+
+
 
 	//console.log(jdata);
 	$(".custom-select").click(function() {
+
+
 		country = $("#drop").val();
 		commodity = $("#drop2").val();
 		year = $("#drop3").val();
+
 		$.ajax({
 				 type: 'GET',
 				 url: '{!!URL::to('ajaxget')!!}',
@@ -72,6 +154,7 @@ $(document).ready(function() {
 
 		});
 	});
+})
 
 </script>
 <!-- Sidebar -->
@@ -123,9 +206,8 @@ $(document).ready(function() {
 	  	<div class="form-group">
 		  	<label class="col-md-4 control-label">Year</label>
 		  	<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop3">
-			 	<option selected>2015</option>
-				<option value="1997">1997</option>
-			 	<option value="2000">2000</option>
+			 	<option selected>1997</option>
+				<option value="2000">2000</option>
 			 	<option value="2003">2003</option>
 			 	<option value="2006">2006</option>
 			 	<option value="2009">2009</option>
@@ -133,10 +215,13 @@ $(document).ready(function() {
 			 	<option value="2012">2012</option>
 			 	<option value="2013">2013</option>
 			 	<option value="2014">2014</option>
+				<option value="2015">2015</option>
 		 	</select>
 	 	</div>
+
 	</form>
 </div>
+
 @stop
 @section('stuff')
 
@@ -256,4 +341,15 @@ $(document).ready(function() {
 
 	</script>
 
+@stop
+@section('morestuff')
+<div class="row">
+	<div class="col-md-6">
+		<p>
+		 <label for="amount">Year:</label>
+		 <input id="amount" readonly style="border:0; color:#4D93C1; font-weight:bold;" type="text" value="1997" class="amount">
+		</p>
+		<div id="slider"></div>
+	</div>
+</div>
 @stop

@@ -44,10 +44,17 @@ path {
     shape-rendering: crispEdges;
 }
 .legend {
-	font-size: 12px
+	font-size: 15px
 }
 
-
+.slidez {
+	position: relative;
+	left: 500px;
+}
+.col-md-6 {
+	left: 300px;
+	width: 300px;
+}
 </style>
 
 <head>
@@ -61,6 +68,8 @@ path {
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.29/dc.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.29/dc.css" media="screen"/>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/d3-legend/1.1.0/d3-legend.js"></script>
 		<script src="js/formatPrefix.js"></script>
@@ -74,8 +83,8 @@ path {
 			<div class="container-fluid">
 				<div class="navbar-header"></div>
 				<ul class="nav navbar-nav">
-					<li> <a href="map">Map View</a></li>
-		         <li><a href="/">Bar view</a></li>
+					<li> <a href="/">Map View</a></li>
+		         <li><a href="bars">Bar view</a></li>
 					<li><a href="lines">Line view</a></li>
 		         <li><a href="disc">Disc view</a></li>
 				</ul>
@@ -88,6 +97,10 @@ path {
 	</div>
 	<div class="centered" id="centered">
 		@yield('stuff')
+	</div>
+	<div id="slidez">
+		@yield('morestuff')
+		
 	</div>
 
 </body>
