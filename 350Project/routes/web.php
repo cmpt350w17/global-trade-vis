@@ -11,12 +11,17 @@
 |
 */
 
-Route::get('/', 'JqueryController@jquery');
+Route::get('/bars', 'JqueryController@jquery');
 
 
-Route::get('/map', function() {
+Route::get('/', function() {
    return view ('hmap');
 });
+
+Route::get('/group', function() {
+   return view ('groupBars');
+});
+
 
 Route::get('/lines', 'JqueryController@showlines');
 
@@ -35,6 +40,8 @@ Route::get('/d3', function() {
 Route::get('/barstest', function() {
    return view('d3bars');
 });
+Route::get('/squery','JqueryController@sampleQuery');
+Route::get('/dc','JqueryController@testQuery');
 
 //Route::get('/test', 'JqueryController@jquery');
 Route::get('/ajaxget', 'JqueryController@get');

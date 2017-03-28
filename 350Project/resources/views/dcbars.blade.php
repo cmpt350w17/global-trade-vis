@@ -1,47 +1,50 @@
 @extends('layouts.master3')
-@section('stuff')
-<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src="js/datamaps.world.min.js"></script>
-<div id="container" style="position: relative; width: 900px; height: 500px; left:80px margin-top:100px"></div>
+
+@section('content')
 <script>
-    var map = new Datamap({element: document.getElementById('container'),
-    projection: 'mercator',
-    fills: {
-    defaultFill: "#ABDDA4",
-    authorHasTraveledTo: "#0099ff",
-    Canada: "#ff3300",
-    Murica: "#00e64d",
-    Mex: "#cc0000",Bra: "#009933",Arg: "#ff5c33",
-  },
-  data: {
-    USA: { fillKey: "Murica" },
-    JPN: { fillKey: "authorHasTraveledTo" },
-    ITA: { fillKey: "authorHasTraveledTo" },
-    KOR: { fillKey: "authorHasTraveledTo" },
-    DEU: { fillKey: "authorHasTraveledTo" },
-    ARG: { fillKey: "Arg" },
-    CAN: { fillKey: "Canada" },
-    CHN: { fillKey: "authorHasTraveledTo" },
-    BRA: { fillKey: "Bra" },
-    AUS: { fillKey: "authorHasTraveledTo" },
-    FRA: { fillKey: "authorHasTraveledTo" },
-    IND: { fillKey: "authorHasTraveledTo" },
-    IDN: { fillKey: "authorHasTraveledTo" },
-    MEX: { fillKey: "Mex" },
-    SAU: { fillKey: "authorHasTraveledTo" },
-    RUS: { fillKey: "authorHasTraveledTo" },
-    ZAF: { fillKey: "authorHasTraveledTo" },
-    TUR: { fillKey: "authorHasTraveledTo" },
-    GBR: { fillKey: "authorHasTraveledTo" },
-  }
+
+//var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
+$(document).ready(function() {
+	function resetData(ndx, dimensions) {
+    var bChartFilters = bChart.filters();
+    bChart.filter(null);
+    ndx.remove();
+    bChart.filter([bChartFilters]);
+    console.log(bChart.filters());
+}
+	var country = 'Canada';
+	var commodity = 'All Commodities';
+	var year = '2015';
+
+	//console.log(jdata);
+	$(".custom-select").click(function() {
+		country = $("#drop").val();
+		commodity = $("#drop2").val();
+		year = $("#drop3").val();
+		$.ajax({
+				 type: 'GET',
+				 url: '{!!URL::to('ajaxget')!!}',
+				 data: { 'country': country, 'commodity': commodity, 'year': year},
+				 success: function(data) {
+					 console.log('success');
+					 console.log(data);
+					 data.shift();
+					 var ndx = crossfilter(data);
+ 					//print_filter(data);
+ 					//var Exports = ndx.dimension(function(d) { return d.Export; });
+ 					var Countries = ndx.dimension(function(d) { return d.Partner });
+ 					var test = Countries.group().reduceSum(function(d) { return d.Export });
+					bChart
+					.dimension(Countries)
+					.group(test);
+					dc.redrawAll();
 
 
+				}});
 
+	});
 });
 </script>
-@stop
-@section('content')
 <div class="w3-sidebar w3-light-grey w3-bar-block" id="sidebar">
 	<h4 class="w3-bar-item">Global Trade Vis</h4>
 	<form method="GET" id="frm">
@@ -104,4 +107,47 @@
 	 	</div>
 	</form>
 </div>
+@stop
+@section('stuff')
+	<script>
+	function print_filter(filter) {
+		var f=eval(filter);
+		if (typeof(f.length) != "undefined") {}else{}
+		if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
+		if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
+		console.log(filter+"("+f.length+") = "+JSON.stringify(f).replace("[","[\n\t").replace(/}\,/g,"},\n\t").replace("]","\n]"));
+	}
+	var data = <?php echo json_encode($data)?>;
+	//console.log(data);
+	data.shift();
+	var ndx = crossfilter(data);
+	//print_filter(data);
+	//var Exports = ndx.dimension(function(d) { return d.Export; });
+	var Countries = ndx.dimension(function(d) { return d.Partner });
+	var test = Countries.group().reduceSum(function(d) { return d.Export });
+	//var minExport = Exports.bottom(1)[0].Year;
+	//var maxExport = Exports.top(1)[0].Year;
+	var bChart  = dc.barChart("#centered");
+	bChart
+		.width(500).height(350)
+		.margins({top: 10, right: 10, bottom: 150, left: 50})
+		.dimension(Countries)
+		.group(test)
+		.x(d3.scale.ordinal())
+		.xUnits(dc.units.ordinal)
+		.on('renderlet', function(chart) {
+			chart.selectAll("g.x text")
+			.transition(500)
+			.attr('transform', "rotate(-90)")
+			.style("text-anchor", "end")
+			.attr("dx", "-.8em")
+			.attr("dy", "-.55em");
+
+		});
+	bChart.xAxis().ticks(5);
+	bChart.yAxis().tickFormat(d3.format('2s'));
+
+	dc.renderAll();
+	</script>
+
 @stop
