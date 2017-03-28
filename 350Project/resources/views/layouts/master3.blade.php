@@ -19,7 +19,7 @@
 .centered {
 
 	position: relative;
-	left: 300px;
+	left: 200px;
 	margin-top: 30px;
 	height: 500px;
 	width: 600px;
@@ -100,7 +100,7 @@ path {
 	</div>
 	<div id="slidez">
 		@yield('morestuff')
-		
+
 	</div>
 
 </body>

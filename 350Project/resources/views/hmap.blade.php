@@ -3,9 +3,42 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<div id="container" style="position: relative; width: 900px; height: 500px;"></div>
+<div id="container" style="position: relative; width: 900px; height: 500px; left:80px margin-top:100px"></div>
 <script>
-    var map = new Datamap({element: document.getElementById('container')});
+    var map = new Datamap({element: document.getElementById('container'),
+    projection: 'mercator',
+    fills: {
+    defaultFill: "#ABDDA4",
+    authorHasTraveledTo: "#0099ff",
+    Canada: "#ff3300",
+    Murica: "#00e64d",
+    Mex: "#cc0000",Bra: "#009933",Arg: "#ff5c33",
+  },
+  data: {
+    USA: { fillKey: "Murica" },
+    JPN: { fillKey: "authorHasTraveledTo" },
+    ITA: { fillKey: "authorHasTraveledTo" },
+    KOR: { fillKey: "authorHasTraveledTo" },
+    DEU: { fillKey: "authorHasTraveledTo" },
+    ARG: { fillKey: "Arg" },
+    CAN: { fillKey: "Canada" },
+    CHN: { fillKey: "authorHasTraveledTo" },
+    BRA: { fillKey: "Bra" },
+    AUS: { fillKey: "authorHasTraveledTo" },
+    FRA: { fillKey: "authorHasTraveledTo" },
+    IND: { fillKey: "authorHasTraveledTo" },
+    IDN: { fillKey: "authorHasTraveledTo" },
+    MEX: { fillKey: "Mex" },
+    SAU: { fillKey: "authorHasTraveledTo" },
+    RUS: { fillKey: "authorHasTraveledTo" },
+    ZAF: { fillKey: "authorHasTraveledTo" },
+    TUR: { fillKey: "authorHasTraveledTo" },
+    GBR: { fillKey: "authorHasTraveledTo" },
+  }
+
+
+
+});
 </script>
 @stop
 @section('content')
