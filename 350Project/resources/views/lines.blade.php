@@ -35,6 +35,9 @@ $(document).ready(function() {
 		         svg.select(".line")   // change the line
 		             .duration(750)
 		             .attr("d", valueline(data));
+		         svg.select(".line2")
+		         	 .duration(750)
+		         	 .attr("d", importline(data));
 		         svg.select(".x.axis") // change the x axis
 		             .duration(750)
 		             .call(xAxis);
@@ -122,8 +125,8 @@ $(document).ready(function() {
 var data = <?php echo json_encode($data)?>;
 console.log(data);
 var margin = {top: 30, right: 20, bottom: 30, left: 50},
-    width = 600 - margin.left - margin.right,
-    height = 270 - margin.top - margin.bottom;
+    width = 1000 - margin.left - margin.right,
+    height = 400 - margin.top - margin.bottom;
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;
 // Set the ranges
@@ -141,6 +144,10 @@ var yAxis = d3.svg.axis().scale(y)
 var valueline = d3.svg.line()
     .x(function(d) { return x(d.Year); })
     .y(function(d) { return y(d.Export); });
+
+var importline = d3.svg.line()
+	.x(function(d) {return x(d.Year);})
+	.y(function(d) {return y(d.Import);})  
 
 // Adds the svg canvas
 var svg = d3.select(".centered")
@@ -161,9 +168,15 @@ var svg = d3.select(".centered")
     x.domain(d3.extent(data, function(d) { return d.Year; }));
     y.domain([0, d3.max(data, function(d) { return d.Export; })]);
     // Add the valueline path.
-    svg.append("path")
+    svg.append("path")  
         .attr("class", "line")
+        .style("stroke", "#0E40E3")
         .attr("d", valueline(data));
+
+    svg.append("path")
+    	.attr("class", "line2")
+    	.style("stroke", "#B90EE3" )
+    	.attr("d", importline(data));
     // Add the X Axis
     svg.append("g")
         .attr("class", "x axis")
