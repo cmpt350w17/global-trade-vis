@@ -19,7 +19,7 @@
 .centered {
 
 	position: relative;
-	left: 300px;
+	left: 200px;
 	margin-top: 30px;
 	height: 500px;
 	width: 600px;
@@ -43,9 +43,18 @@ path {
     stroke-width: 1;
     shape-rendering: crispEdges;
 }
+.legend {
+	font-size: 15px
+}
 
-
-
+.slidez {
+	position: relative;
+	left: 500px;
+}
+.col-md-6 {
+	left: 300px;
+	width: 300px;
+}
 </style>
 
 <head>
@@ -56,7 +65,16 @@ path {
    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
-		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.29/dc.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.0.0-beta.29/dc.css" media="screen"/>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/d3-legend/1.1.0/d3-legend.js"></script>
+		<script src="js/formatPrefix.js"></script>
+		<script src="js/maxComm.js"></script>
+
 </head>
 <body>
 
@@ -65,8 +83,8 @@ path {
 			<div class="container-fluid">
 				<div class="navbar-header"></div>
 				<ul class="nav navbar-nav">
-					<li> <a href="map">Map View</a></li>
-		         <li><a href="/">Bar view</a></li>
+					<li> <a href="/">Map View</a></li>
+		         <li><a href="bars">Bar view</a></li>
 					<li><a href="lines">Line view</a></li>
 		         <li><a href="disc">Disc view</a></li>
 				</ul>
@@ -77,8 +95,12 @@ path {
 
  		@yield('content')
 	</div>
-	<div class="centered">
+	<div class="centered" id="centered">
 		@yield('stuff')
+	</div>
+	<div id="slidez">
+		@yield('morestuff')
+
 	</div>
 
 </body>
