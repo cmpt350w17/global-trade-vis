@@ -16,14 +16,7 @@
 	width:15%;
 }
 
-.centered {
 
-	position: relative;
-	left: 200px;
-	margin-top: 30px;
-	height: 500px;
-	width: 600px;
-}
 
 html, body {
 
@@ -92,16 +85,15 @@ path {
 		</nav>
 	</div>
 	<div class="sidebar">
-
- 		@yield('content')
+		@yield('content')
 	</div>
 	<div class="centered" id="centered">
 		@yield('stuff')
 	</div>
-	<div id="slidez">
-		@yield('morestuff')
 
-	</div>
+<div id="slidez">
+		@yield('morestuff')
+  </div>
 
 </body>
 </html>

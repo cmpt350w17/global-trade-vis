@@ -32,6 +32,13 @@ class JqueryController extends Controller
       **/
 
    }
+   public function mapdata() {
+      $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')
+      ->where('Partner', '=','World')
+      ->where('Commodity', '=', 'All Commodities')->where('Year', '=', '2015')
+      ->orderBy ('Export', 'DESC')->take (30)->get();
+		 return view('hmap',compact('data'));
+   }
    public function showlines() {
       $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')
      ->where('Reporter', '=',"Canada")

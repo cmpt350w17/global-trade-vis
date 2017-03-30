@@ -1,8 +1,8 @@
 @extends('layouts.master3')
 
 @section('content')
+<link rel="stylesheet" href="css/centeredBars.css">
 <script>
-
 
 //var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 $(document).ready(function() {
