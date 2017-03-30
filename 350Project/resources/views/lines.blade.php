@@ -157,6 +157,34 @@ var svg = d3.select(".centered")
     	  .append("g")
         .attr("transform",
               "translate(" + margin.left + "," + margin.top + ")");
+/*
+var mouseG = svg.append("path")//black vertical line for the mouse to follow
+	.attr("class", "mouse-line")
+    .style("stroke", "black")
+    .style("stroke-width", "1px")
+    .style("opacity", "0");
+
+var mousePerLine = mouseG.selectAll('.mouse-per-line')
+	.data(data)
+	.enter()
+	.apped("g")
+	.attr("class", "mouse-per-line");
+
+mousePerLine.append("circle")
+      .attr("r", 7)
+      .style("stroke", function(d) {
+        return color(d.name);
+      })
+      .style("fill", "none")
+      .style("stroke-width", "1px")
+      .style("opacity", "0");
+
+mousePerLine.append("text")
+      .attr("transform", "translate(10,3)");
+
+*/
+
+
 // Get the data
 	console.log(data[0].Year);
 	for (var i = 0; i < data.length; i++) {
