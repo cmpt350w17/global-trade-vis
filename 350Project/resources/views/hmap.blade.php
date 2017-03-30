@@ -54,6 +54,9 @@
                 if (geography.properties.name == "Germany") {
                    map.arc( Germany, {popupOnHover: true});
                 }
+                if (geography.properties.name == "Japan") {
+                   map.arc( Japan, {popupOnHover: true});
+                }
                 /*if (geography.properties.name == "Greenland") {
                    map.svg.selectAll('path.datamaps-arc').remove();
                 }*/

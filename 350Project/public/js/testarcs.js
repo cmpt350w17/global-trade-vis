@@ -209,3 +209,56 @@ var Germany = [
 	}
 
 ];
+var Japan = [
+   {
+      origin: 'JPN',
+      destination: 'USA',
+		strokeWidth: 2
+   },
+	{
+		origin: 'JPN',
+		destination: 'KOR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'HKG',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'THA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'CHN',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'AUS',
+		strokeWidth: 2
+	},
+   {
+		origin: 'JPN',
+		destination: 'SGP',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'DEU',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'SGP',
+		strokeWidth: 2
+	},
+	{
+		origin: 'JPN',
+		destination: 'SGP',
+		strokeWidth: 2
+	}
+
+];
