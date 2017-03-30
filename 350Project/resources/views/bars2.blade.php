@@ -95,7 +95,7 @@ $(document).ready(function() {
 
 		country = $("#drop").val();
 		commodity = $("#drop2").val();
-		year = $("#drop3").val();
+		//year = $("#drop3").val();
 
 		$.ajax({
 				 type: 'GET',
@@ -203,21 +203,7 @@ $(document).ready(function() {
 			</select>
 		</div>
 
-	  	<div class="form-group">
-		  	<label class="col-md-4 control-label">Year</label>
-		  	<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop3">
-			 	<option selected>1997</option>
-				<option value="2000">2000</option>
-			 	<option value="2003">2003</option>
-			 	<option value="2006">2006</option>
-			 	<option value="2009">2009</option>
-			 	<option value="2011">2011</option>
-			 	<option value="2012">2012</option>
-			 	<option value="2013">2013</option>
-			 	<option value="2014">2014</option>
-				<option value="2015">2015</option>
-		 	</select>
-	 	</div>
+	  	
 
 	</form>
 </div>

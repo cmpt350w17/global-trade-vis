@@ -48,8 +48,12 @@
                 if (geography.properties.name == "United States of America") {
                    map.arc( America, {popupOnHover: true});
                 }
-
-
+                if (geography.properties.name == "China") {
+                   map.arc( China, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Germany") {
+                   map.arc( Germany, {popupOnHover: true});
+                }
                 /*if (geography.properties.name == "Greenland") {
                    map.svg.selectAll('path.datamaps-arc').remove();
                 }*/

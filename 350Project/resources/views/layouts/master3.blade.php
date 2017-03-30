@@ -45,7 +45,8 @@ path {
 	left: 500px;
 }
 .col-md-6 {
-	left: 300px;
+	margin-top: -30px;
+	left: 250px;
 	width: 300px;
 }
 </style>
