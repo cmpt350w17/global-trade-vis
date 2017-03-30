@@ -14,12 +14,10 @@
 Route::get('/bars', 'JqueryController@jquery');
 
 
-Route::get('/', function() {
-   return view ('hmap');
-});
+Route::get('/', 'JqueryController@mapdata');
 
-Route::get('/group', function() {
-   return view ('groupBars');
+Route::get('/choro', function() {
+   return view ('testchoropleth');
 });
 
 

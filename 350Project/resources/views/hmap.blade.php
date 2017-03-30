@@ -1,45 +1,99 @@
 @extends('layouts.master3')
 @section('stuff')
-<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<link rel="stylesheet" href="css/centeredMap.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="js/datamaps.world.min.js"></script>
-<div id="container" style="position: relative; width: 900px; height: 500px; left:80px margin-top:100px"></div>
+<script src="js/testarcs.js"></script>
+<div id="container" style="position: relative; width: 700px; height: 475px;"></div>
 <script>
+    var dt = <?php echo json_encode($data)?>;
+    console.log(dt);
+    for (var i = 0; i < dt.length; i++) {
+      var per = dt[i].Export / dt[0].Export;
+      console.log(dt[i].Reporter + ": " + dt[i].Export + " " + per);
+   }
+    var series = [
+        ["CHN",100],["USA",66],["DEU",58],["JPN",27],["KOR",23],["FRA",21],
+        ["GBR",20],["ITA",20],["CAN",18],["MEX",17],["RUS",15],["IND",12],
+        ["SAU",9],["BRA",8],["AUS",8],["ZAF",3],["TUR",6],["IDN",7],
+        ["ARG",2]];
+        var dataset = {};
+        // We need to colorize every country based on "numberOfWhatever"
+        // colors should be uniq for every value.
+        // For this purpose we create palette(using min/max series-value)
+        var onlyValues = series.map(function(obj){ return obj[1]; });
+        var minValue = Math.min.apply(null, onlyValues),
+                maxValue = Math.max.apply(null, onlyValues);
+        // create color palette function
+        // color can be whatever you wish
+        var paletteScale = d3.scale.linear()
+                .domain([minValue,maxValue])
+                .range(["#EFEFFF","#02386F"]); // blue color
+        // fill dataset in appropriate format
+        series.forEach(function(item){ //
+            // item example value ["USA", 70]
+            var iso = item[0],
+                    value = item[1];
+            dataset[iso] = { numberOfThings: value, fillColor: paletteScale(value) };
+        });
+
+
     var map = new Datamap({element: document.getElementById('container'),
+    done: function(datamap) {
+            datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+                console.log(geography.properties.name);
+                if (geography.properties.name == "Canada") {
+                   map.arc( Canada, {popupOnHover: true});
+                }
+                if (geography.properties.name == "United States of America") {
+                   map.arc( America, {popupOnHover: true});
+                }
+                if (geography.properties.name == "China") {
+                   map.arc( China, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Germany") {
+                   map.arc( Germany, {popupOnHover: true});
+                }
+                /*if (geography.properties.name == "Greenland") {
+                   map.svg.selectAll('path.datamaps-arc').remove();
+                }*/
+
+
+            });
+        },
     projection: 'mercator',
     fills: {
-    defaultFill: "#ABDDA4",
-    authorHasTraveledTo: "#0099ff",
-    Canada: "#ff3300",
-    Murica: "#00e64d",
-    Mex: "#cc0000",Bra: "#009933",Arg: "#ff5c33",
-  },
-  data: {
-    USA: { fillKey: "Murica" },
-    JPN: { fillKey: "authorHasTraveledTo" },
-    ITA: { fillKey: "authorHasTraveledTo" },
-    KOR: { fillKey: "authorHasTraveledTo" },
-    DEU: { fillKey: "authorHasTraveledTo" },
-    ARG: { fillKey: "Arg" },
-    CAN: { fillKey: "Canada" },
-    CHN: { fillKey: "authorHasTraveledTo" },
-    BRA: { fillKey: "Bra" },
-    AUS: { fillKey: "authorHasTraveledTo" },
-    FRA: { fillKey: "authorHasTraveledTo" },
-    IND: { fillKey: "authorHasTraveledTo" },
-    IDN: { fillKey: "authorHasTraveledTo" },
-    MEX: { fillKey: "Mex" },
-    SAU: { fillKey: "authorHasTraveledTo" },
-    RUS: { fillKey: "authorHasTraveledTo" },
-    ZAF: { fillKey: "authorHasTraveledTo" },
-    TUR: { fillKey: "authorHasTraveledTo" },
-    GBR: { fillKey: "authorHasTraveledTo" },
-  }
-
-
+    defaultFill: "#F5F5F5" },
+    data: dataset,
+    geographyConfig: {
+        borderColor: '#DEDEDE',
+        highlightBorderWidth: 2,
+        // don't change color on mouse hover
+        highlightFillColor: function(geo) {
+            return geo['fillColor'] || '#F5F5F5';
+        },
+        // only change border
+        highlightBorderColor: '#B7B7B7',
+        // show desired information in tooltip
+        popupTemplate: function(geo, data) {
+            // don't show tooltip if country don't present in dataset
+            if (!data) { return ; }
+            // tooltip content
+            return ['<div class="hoverinfo">',
+                '<strong>', geo.properties.name, '</strong>',
+                '<br>Count: <strong>', data.numberOfThings, '</strong>',
+                '</div>'].join('');
+        }
+    }
 
 });
-</script>
+
+
+
+
+
+
+ </script>
 @stop
 @section('content')
 <div class="w3-sidebar w3-light-grey w3-bar-block" id="sidebar">
