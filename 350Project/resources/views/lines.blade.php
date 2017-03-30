@@ -1,6 +1,7 @@
 @extends('layouts.master3')
 
 @section('content')
+<link rel="stylesheet" href="css/centeredLines.css">
 <script>
 
 //var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
@@ -124,9 +125,11 @@ $(document).ready(function() {
 <script>
 var data = <?php echo json_encode($data)?>;
 console.log(data);
+
 var margin = {top: 30, right: 20, bottom: 30, left: 50},
     width = 1000 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
+
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;
 // Set the ranges
@@ -139,7 +142,8 @@ var xAxis = d3.svg.axis().scale(x)
 
 
 var yAxis = d3.svg.axis().scale(y)
-    .orient("left").ticks(5);
+    .orient("left").ticks(5)
+	 .tickFormat(d3.format("2s"));
 // Define the line
 var valueline = d3.svg.line()
     .x(function(d) { return x(d.Year); })
