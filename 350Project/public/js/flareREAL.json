@@ -1,0 +1,1174 @@
+{
+ "name": "World",
+ "children": [
+  {
+   "name": "N. America",
+   "description": "World",
+   "children": [
+    {
+     "name": "USA",
+     "description": "North America",
+     "children": [
+      {"name": "Manufactured Goods",
+        "description": "USA",
+        "children": [
+       {"name": "Textiles","description": "Manufactured Goods", "size": 16454894897},
+       {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 34970831068},
+       {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 308193670094},
+       {"name": "Electronics","description": "Manufactured Goods", "size": 1472591367531},
+       {"name": "Iron and Steel","description": "Manufactured Goods", "size": 145946812739},
+       {"name": "Petroleum oil","description": "Manufactured Goods", "size": 35063154941},
+       {"name": "Vehicles","description": "Manufactured Goods", "size": 1004496103161}
+      ]
+     },
+      {"name": "Food Goods",
+        "description": "USA",
+        "children": [
+       {"name": "Prepared Food","description": "Food Goods", "size": 37539339223},
+       {"name": "Edible Meat","description": "Food Goods", "size": 116961099449},
+       {"name": "Edible Fruit","description": "Food Goods", "size": 97258213574},
+       {"name": "Edible Vegetables","description": "Food Goods", "size": 33078892745},
+       {"name": "Cereal, flour, starch","description": "Food Goods", "size": 29324814873},
+       {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 8709110608}
+      ]
+     },
+      {"name": "Raw Goods",
+        "description": "USA",
+        "children": [
+       {"name": "Wood","description": "Raw Goods", "size": 74129982990},
+       {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 49328078051},
+       {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 49328078051},
+       {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 449755823077},
+       {"name": "Radioactive Elements","description": "Raw Goods", "size": 16234606599}
+      ]
+     }
+     ]
+    },
+    {
+     "name": "Canada",
+     "description": "North America",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "Canada",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 3532817753},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 2037975076},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 46280686725},
+        {"name": "Electronics","description": "Manufactured Goods", "size": 150241170631},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 52752465714},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 468908212509},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 552348999127}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "Canada",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 11662248732},
+        {"name": "Edible Meat","description": "Food Goods", "size": 37757710386},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 4358363808},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 28507273397},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 20621287468},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 3630702990}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "Canada",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 116563682648},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 37196684998},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 56190656969},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 135138289618},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 14970974432}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Mexico",
+     "description": "North America",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "Mexico",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 8544093952},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 278046026},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 13824157913},
+        {"name": "Electronics","description": "Manufactured Goods", "size": 623012146072},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 27366417574},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 295559866041},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 533056914266}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "Mexico",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 8101800536},
+        {"name": "Edible Meat","description": "Food Goods", "size": 7712622150},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 24144026934},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 40234356321},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 9401789225},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 5727197139}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "Mexico",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 4043459330},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 7607974224},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 22714391531},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 62888643833},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 9179811}
+       ]
+      }
+      ]
+    }
+   ]
+  },
+  {
+   "name": "Asia",
+   "description": "World",
+   "children": [
+    {
+     "name": "China",
+     "description": "Asia",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "China",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 170141949850},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 895895807},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 38227501472},
+        {"name": "Electronics","description": "Manufactured Goods", "size": 3353751993399},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 269770138972},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 19044469083},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 355064811639}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "China",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 50478118588},
+        {"name": "Edible Meat","description": "Food Goods", "size": 9163953959},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 25956665472},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 54557389908},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 10638839592},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 15272910430}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "China",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 88572338786},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 97355042054},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 3587502786},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 237621418930},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 1151799548}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Indonesia",
+     "description": "Asia",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "Indonesia",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 2520623278},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 22738297},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 2915345579},
+        {"name": "Electronics","description": "Manufactured Goods","size": 81647803374},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 8435195704},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 85257573536},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 28337597767}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "Indonesia",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 1913591061},
+        {"name": "Edible Meat","description": "Food Goods", "size": 197443000},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 3537911316},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 843596438},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 3968199430},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 14063618940}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "Indonesia",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 35783671855},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 4113545596},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 40224043504},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 22146466405},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 6545387}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Japan",
+     "description": "Asia",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "Japan",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 2041436245},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 1505558059},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 28089736891},
+        {"name": "Electronics","description": "Manufactured Goods", "size": 1117894480832},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 273759481968},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 75522419},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 1254026591455}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "Japan",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 535230280},
+        {"name": "Edible Meat","description": "Food Goods", "size": 513388165},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 853175860},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 306144835},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 3164232962},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 607914650}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "Japan",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 1173393611},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 33750763094},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 996724840},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 996724840},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 996724840}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "Korea",
+     "description": "Asia",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "Korea",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 5725545438},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 2455400101},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 8812800045},
+        {"name": "Electronics","description": "Manufactured Goods", "size": 959553667411},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 166851478583},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 22447},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 482100181771}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "Korea",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 1548005474},
+        {"name": "Edible Meat","description": "Food Goods", "size": 634808539},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 1299780857},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 1245913051},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 5496978291},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 214890674}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "Korea",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 880879889},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 22034456935},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 1146744786},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 42456833346},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 59283755}
+       ]
+      }
+      ]
+    },
+    {
+     "name": "India",
+     "description": "Asia",
+     "children": [
+       {"name": "Manufactured Goods",
+         "description": "India",
+         "children": [
+        {"name": "Textiles","description": "Manufactured Goods", "size": 29867190058},
+        {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 342348942},
+        {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 65037376587},
+        {"name": "Electronics","description": "Manufactured Goods", "size": 67887006294},
+        {"name": "Iron and Steel","description": "Manufactured Goods", "size": 55363575062},
+        {"name": "Petroleum oil","description": "Manufactured Goods", "size": 120623928},
+        {"name": "Vehicles","description": "Manufactured Goods", "size": 77389838435}
+       ]
+      },
+       {"name": "Food Goods",
+         "description": "India",
+         "children": [
+        {"name": "Prepared Food","description": "Food Goods", "size": 2818188194},
+        {"name": "Edible Meat","description": "Food Goods", "size": 22685434628},
+        {"name": "Edible Fruit","description": "Food Goods", "size": 11151829246},
+        {"name": "Edible Vegetables","description": "Food Goods", "size": 7728977324},
+        {"name": "Cereal, flour, starch","description": "Food Goods", "size": 2707698771},
+        {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 19478654681}
+       ]
+      },
+       {"name": "Raw Goods",
+         "description": "India",
+         "children": [
+        {"name": "Wood","description": "Raw Goods", "size": 1989834491},
+        {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 9767378764},
+        {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 24953359068},
+        {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 288467662571},
+        {"name": "Radioactive Elements","description": "Raw Goods", "size": 7503384}
+       ]
+      }
+      ]
+    }
+   ]
+  },
+  {
+   "name": "Africa",
+   "description": "World",
+   "children": [
+     {
+      "name": "Algeria",
+      "description": "Africa",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Algeria",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 3072572},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods","size": 22983979},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 37720544},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 697588390},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 210130590151},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 31266488}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Algeria",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 10570043},
+         {"name": "Edible Meat","description": "Food Goods", "size": 1218766},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 243995000},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 65923228},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 71989451},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 215985}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Algeria",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 605596},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 2999842701},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 36547315},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 32110279},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 551548}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Egypt",
+      "description": "Africa",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Egypt",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 2244653151},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 3054025},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 1952818151},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 7954238734},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 5792559508},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 17949147786},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 808446009}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Egypt",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 1997448124},
+         {"name": "Edible Meat","description": "Food Goods", "size": 37809623},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 6463250985},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 6538201400},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 807425812},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 408428216}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Egypt",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 291076361},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 3210133296},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 80264745},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 6567377491},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 83561}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Nigeria",
+      "description": "Africa",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Nigeria",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 769550982},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 123505},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 28452866},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 220362332},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 105413884},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 496982101785},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 170454437}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Nigeria",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 129549252},
+         {"name": "Edible Meat","description": "Food Goods", "size": 21547939},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 1323308202},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 9879726},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 190800111},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 282288679}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Nigeria",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 460690809},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 100694143},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 209604519},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 1832116},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 1155421}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "South Africa",
+      "description": "Africa",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "South Africa",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 969072407},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 2590342878},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 15155089515},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 50440727812},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 949732519},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 57130395089}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "South Africa",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 4323609983},
+         {"name": "Edible Meat","description": "Food Goods", "size": 1377434615},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 17193008388},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 1061251747},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 1236058156},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 733105009}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "South Africa",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 3852892761},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 8467413654},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 70847339167},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 111954199700},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 725870617}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "Middle East",
+   "description": "World",
+   "children": [
+     {
+      "name": "Iran",
+      "description": "Middle East",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Iran",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 193957437},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 29841264},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 236207760},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 620359663},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 2530045893},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 201078874274},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 845042507}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Iran",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 649933038},
+         {"name": "Edible Meat","description": "Food Goods", "size": 60211633},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 5134986887},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 1016264137},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 708018262},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 679696323}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Iran",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 66928437},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 1253750002},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 1449586640},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 766398748}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Israel",
+      "description": "Middle East",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Israel",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 1026837000},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 3201923000},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 41717941000},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 75624125000},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 1354362000},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 32242000},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 1643825000}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Israel",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 2315992000},
+         {"name": "Edible Meat","description": "Food Goods", "size": 136305000},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 3912798000},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 4116534000},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 660135000},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 139093000}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Israel",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 92350000},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 8186537000},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 25381000},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 156075656000},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 16365000}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Saudi Arabia",
+      "description": "Middle East",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Saudi Arabia",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 332874706},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 2249621173},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 8713323684},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 4808392591},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 1701453633898},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 8705157562}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Saudi Arabia",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 2761768407},
+         {"name": "Edible Meat","description": "Food Goods", "size": 897269179},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 1067987108},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 756416630},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 2782808841},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 231362235}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Saudi Arabia",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 313534907},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 8301857435},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 561856278},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 6136470259},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 16504103}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Turkey",
+      "description": "Middle East",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Turkey",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 17378552350},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 2338568931},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 4775086013},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 65584139645},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 68752778975},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 7938254},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 115141622951}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Turkey",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 13619157882},
+         {"name": "Edible Meat","description": "Food Goods", "size": 2874442310},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 29480722435},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 8152599808},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 8707742252},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 1089296124}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Turkey",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 4709589772},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 7948621800},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 8439081585},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 55178179906},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 30140821}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "Oceania",
+   "description": "World",
+   "children": [
+     {
+      "name": "New Zealand",
+      "description": "Oceania",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "New Zealand",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 322571209},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 31470338},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 1824855185},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 6909858218},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 3419674229},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 8112255588},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 1695758969}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "New Zealand",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 1738349623},
+         {"name": "Edible Meat","description": "Food Goods", "size": 34803098485},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 10212527183},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 2741532625},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 4578713013},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 39806514}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "New Zealand",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 19849552821},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 134372001},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 288319719},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 4452640957},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 791430}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Australia",
+      "description": "Oceania",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Australia",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 889674260},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 554345779},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 24646968343},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 23337617509},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 11703263687},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 65922371122},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 25211961393}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Australia",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 1664385742},
+         {"name": "Edible Meat","description": "Food Goods", "size": 62373105968},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 6744551644},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 7657578096},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 4420024229},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 347721087}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Australia",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 9672164418},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 45756277109},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 422780500468},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 106846754274},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 110566047}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "S. America",
+   "description": "World",
+   "children": [
+     {
+      "name": "Argentina",
+      "description": "South America",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Argentina",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 110199655},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 124004983},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 6437342726},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 3720149838},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 4576834166},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 20992863754},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 59374051745}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Argentina",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 8745458729},
+         {"name": "Edible Meat","description": "Food Goods", "size": 14277829648},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 9197860776},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 4337559444},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 2992272259},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 1374892321}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Argentina",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 1951270277},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 2617398965},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 10817004190},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 13928813321},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 60695041}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Brazil",
+      "description": "South America",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Brazil",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 1774899270},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 2342345194},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 9719487804},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 42256290416},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 76864143542},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 101535930525},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 95749633982}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Brazil",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 19180846494},
+         {"name": "Edible Meat","description": "Food Goods", "size": 94484663725},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 6908983579},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 373475420},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 1438817026},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 44948524097}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Brazil",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 19925003287},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 21828217184},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 191809084870},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 19969713260},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 4672315}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Venezuela",
+      "description": "South America",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Venezuela",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 7920215},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 549958},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 237985785},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 381272903},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 6836257254},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 347399362121},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 1124551926}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Venezuela",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 62242963},
+         {"name": "Edible Meat","description": "Food Goods", "size": 15188294},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 86470694},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 16576861},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 106541620},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 33441211}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Venezuela",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 71512198},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 1440985805},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 1395139291},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 122713994},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 507427}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Colombia",
+      "description": "South America",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Colombia",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 733534054},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 46375907},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 3687528620},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 3613574010},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 7285131403},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 137234160767},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 4528783618}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Colombia",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 396053085},
+         {"name": "Edible Meat","description": "Food Goods", "size": 1057750500},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 7289998629},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 225980814},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 933820972},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 18906520322}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Colombia",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 370243160},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 1023096839},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 1920953},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 16092531023},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 1920953}
+        ]
+       }
+       ]
+     }
+    ]
+  },
+  {
+   "name": "Europe",
+   "description": "World",
+   "children": [
+     {
+      "name": "France",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "France",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 7091522333},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 2415693222},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 260893418066},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 410027195391},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 137952420442},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 918901191},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 462635442963}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "France",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 16504845839},
+         {"name": "Edible Meat","description": "Food Goods", "size": 39006718543},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 18311324398},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 20207996991},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 32646928984},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 5376428864}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "France",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 25865966331},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 41478496540},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 2240816450},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 47321913977},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 16139771399}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Germany",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Germany",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 20966896635},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 4480390577},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 517635534181},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 1143452465052},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 239180405497},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 1191302695},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 1883830479733}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Germany",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 23535228627},
+         {"name": "Edible Meat","description": "Food Goods", "size": 69240210261},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 13729345303},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 9423412323},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 47536289478},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 21453590316}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Germany",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 71620299221},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 79859700514},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 3259251539},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 110102550462},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 7783379056}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Italy",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Italy",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 7350134142},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 9278801458},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 153030362142},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 255040017714},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 106619251898},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 3272977926},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 315052408940}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Italy",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 29816309693},
+         {"name": "Edible Meat","description": "Food Goods", "size": 18504260090},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 32559018072},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 13470921997},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 38821972596},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 9865753634}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Italy",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 17244444397},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 15558870989},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 2143178643},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 108451836575},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 60568550}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Russia",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Russia",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 494369749},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 14103715833},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 3603660372},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 30110945787},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 30110945787},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 1035365601953},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 26585814827}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Russia",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 1181134931},
+         {"name": "Edible Meat","description": "Food Goods", "size": 455242052},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 692516648},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 1726938875},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 3017743787},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 838188573}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Russia",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 55261248169},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 41350809468},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 20161970178},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 63585689154},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 2573468776}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Spain",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Spain",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 4706204894},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 1617677639},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 84556353335},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 138970600392},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 67888624179},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 2344858456},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 414674560687}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Spain",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 24386954759},
+         {"name": "Edible Meat","description": "Food Goods", "size": 35791729577},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 68237667178},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 48541822965},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 10731731059},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 3469105687}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Spain",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 12221365819},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 10075355458},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 12050065547},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 20844047785},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 96042852}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "United Kingdom",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "United Kingdom",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 8581626893},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 8385883467},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 261129225238},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 387690715748},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 79547027341},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 218333057200},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 399812464309}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "United Kingdom",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 4820278735},
+         {"name": "Edible Meat","description": "Food Goods", "size": 16941094782},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 2255953466},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 4312843631},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 18814157909},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 4400989967}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "United Kingdom",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 5696508667},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 32452324094},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 1847481611},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 382895635890},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 1603719050}
+        ]
+       }
+       ]
+     },
+     {
+      "name": "Greece",
+      "description": "Europe",
+      "children": [
+        {"name": "Manufactured Goods",
+          "description": "Greece",
+          "children": [
+         {"name": "Textiles","description": "Manufactured Goods", "size": 575253891},
+         {"name": "Arms and Ammunition","description": "Manufactured Goods", "size": 141728891},
+         {"name": "Pharmaceuticals","description": "Manufactured Goods", "size": 9796382221},
+         {"name": "Electronics","description": "Manufactured Goods", "size": 10334970770},
+         {"name": "Iron and Steel","description": "Manufactured Goods", "size": 5200757242},
+         {"name": "Petroleum oil","description": "Manufactured Goods", "size": 453011052},
+         {"name": "Vehicles","description": "Manufactured Goods", "size": 1739788979}
+        ]
+       },
+        {"name": "Food Goods",
+          "description": "Greece",
+          "children": [
+         {"name": "Prepared Food","description": "Food Goods", "size": 8871248576},
+         {"name": "Edible Meat","description": "Food Goods", "size": 463673534},
+         {"name": "Edible Fruit","description": "Food Goods", "size": 7828194096},
+         {"name": "Edible Vegetables","description": "Food Goods", "size": 1591279386},
+         {"name": "Cereal, flour, starch","description": "Food Goods", "size": 1641680037},
+         {"name": "Coffee, Tea, Spices","description": "Food Goods", "size": 165305119}
+        ]
+       },
+        {"name": "Raw Goods",
+          "description": "Greece",
+          "children": [
+         {"name": "Wood","description": "Raw Goods", "size": 721723126},
+         {"name": "Inorganic Chemicals","description": "Raw Goods", "size": 1384507511},
+         {"name": "Ores, Slag and Ash","description": "Raw Goods", "size": 585679718},
+         {"name": "Precious Stones/ Metals","description": "Raw Goods", "size": 875166668},
+         {"name": "Radioactive Elements","description": "Raw Goods", "size": 415700}
+        ]
+       }
+       ]
+     }
+    ]
+  }
+ ]
+}
