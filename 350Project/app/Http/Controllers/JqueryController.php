@@ -7,10 +7,7 @@ use App\Trade;
 class JqueryController extends Controller
 {
     public function jquery() {
-      $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')
-      ->where('Reporter', '=','Canada')
-      ->where('Commodity', '=', 'All Commodities')->where('Year', '=', '1997')
-      ->orderBy ('Export', 'DESC')->take (11)->get();
+      $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')->where('Reporter', '=','Canada')->where('Commodity', '=', 'All Commodities')->where('Year', '=', '1997')->orderBy ('Export', 'DESC')->take (11)->get();
 		 return view('bars2',compact('data'));
 	 }
 

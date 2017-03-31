@@ -57,6 +57,51 @@
                 if (geography.properties.name == "Japan") {
                    map.arc( Japan, {popupOnHover: true});
                 }
+                if (geography.properties.name == "Mexico") {
+                   map.arc( Mexico, {popupOnHover: true});
+                }
+                if (geography.properties.name == "United Kingdom") {
+                   map.arc( UnitedKingdom, {popupOnHover: true});
+                }
+                if (geography.properties.name == "France") {
+                   map.arc( France, {popupOnHover: true});
+                }
+                if (geography.properties.name == "India") {
+                   map.arc( India, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Brazil") {
+                   map.arc( Brazil, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Italy") {
+                   map.arc( Italy, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Turkey") {
+                   map.arc( Turkey, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Russia") {
+                   map.arc( Russia, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Saudi Arabia") {
+                   map.arc( Saudi, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Australia") {
+                   map.arc( Australia, {popupOnHover: true});
+                }
+                if (geography.properties.name == "South Africa") {
+                   map.arc( SAfrica, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Indonesia") {
+                   map.arc( Indonesia, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Argentina") {
+                   map.arc( Argentina, {popupOnHover: true});
+                }
+                if (geography.properties.name == "South Korea") {
+                   map.arc( Korea, {popupOnHover: true});
+                }
+
+
+
                 /*if (geography.properties.name == "Greenland") {
                    map.svg.selectAll('path.datamaps-arc').remove();
                 }*/
@@ -120,7 +165,7 @@
 				<option value="Turkey">Turkey</option>
 	 		</select>
   		</div>
-		<div class="form-group">
+		<!--<div class="form-group">
 		<label class="col-md-4 control-label">Commodity</label>
 			<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop2">
 		  		<option selected>All Commodities</option>
@@ -158,7 +203,7 @@
 			 	<option value="2013">2013</option>
 			 	<option value="2014">2014</option>
 		 	</select>
-	 	</div>
+	 	</div>-->
 	</form>
 </div>
 @stop
