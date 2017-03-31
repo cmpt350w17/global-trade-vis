@@ -165,18 +165,40 @@ $(document).ready(function() {
 		<div class="form-group">
 	 	<label class="col-md-4 control-label">Country</label>
 	 		<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop">
+	 			<option value="Algeria">Algeria</option>
+	 			<option value="Argentina">Argentina</option>
+	 			<option value="Australia">Australia</option>
+	 			<option value="Brazil">Brazil</option>
 				<option selected>Canada</option>
-				<option value="USA">USA</option>
-				<option value="Japan">Japan</option>
 				<option value="China">China</option>
-				<option value="India">India</option>
-				<option value="United Kingdom">United Kingdom</option>
+				<option value="Colombia">Colombia</option>
+				<option value="Egypt">Egypt</option>
 				<option value="France">France</option>
-				<option value="Brazil">Brazil</option>
-				<option value="Italy">Italy</option>
 				<option value="Germany">Germany</option>
+				<option value="Greece">Greece</option>
+				<option value="India">India</option>
+				<option value="Indonesia">Indonesia</option>
+				<option value="Iran">Iran</option>
+				<option value="Israel">Israel</option>
+				<option value="Italy">Italy</option>
+				<option value="Japan">Japan</option>
 				<option value="Mexico">Mexico</option>
+				<option value="New Zealand">New Zealand</option>
+				<option value="Nigeria">Nigeria</option>
+				<option value="Russian Federation">Russia</option>
+				<option value="Saudi Arabia">Saudi Arabia</option>
+				<option value="South Africa">South Africa</option>
+				<option value="Rep. of Korea ">S. Korea</option>
+				<option value="Spain">Spain</option>	
 				<option value="Turkey">Turkey</option>
+				<option value="United Kingdom">United Kingdom</option>
+				<option value="USA">USA</option>
+				<option value="Venezuela">Venezuela</option>
+				
+		
+				
+				
+				
 	 		</select>
   		</div>
 		<div class="form-group">
@@ -333,7 +355,7 @@ $(document).ready(function() {
 	<div class="col-md-6">
 		<p>
 		 <label for="amount">Year:</label>
-		 <input id="amount" readonly style="border:0; color:#4D93C1; font-weight:bold;" type="text" value="1997" class="amount">
+		 <input id="amount" readonly style="border:0; color:#4D93C1; font-weight:bold;" type="text" value="1997" class="amount" >
 		</p>
 		<div id="slider"></div>
 	</div>
