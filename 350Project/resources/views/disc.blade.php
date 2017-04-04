@@ -67,14 +67,10 @@ var tooltip = d3.select("body")
     .style("z-index", "10")
     .style("opacity", 0);
 
-function format_number(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
-
 function format_description(d) {
   var description = d.description;
-      return  '<b>' + d.name + '</b></br>'+ d.description + '<br> (' + format_number(d.value) + ')';
+  var num = d3.format(".3s")(d.value);
+      return  '<b>' + d.name + '</b></br>'+ d.description + '<br>' + num;
 }
 
 function computeTextRotation(d) {
