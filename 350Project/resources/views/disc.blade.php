@@ -67,9 +67,13 @@ var tooltip = d3.select("body")
     .style("z-index", "10")
     .style("opacity", 0);
 
+
+
 function format_description(d) {
   var description = d.description;
   var num = d3.format(".3s")(d.value);
+  num = num.replace("G", "B");
+
       return  '<b>' + d.name + '</b></br>'+ d.description + '<br>' + num;
 }
 
@@ -237,7 +241,6 @@ d3.json("js/flareREAL.json", function(error, root) {
       .filter(filter_min_arc_size_text)
       .text(function(d,i) {return d.name})
 		.transition().delay(750).style("opacity", 1)
-
 
   }
 });
