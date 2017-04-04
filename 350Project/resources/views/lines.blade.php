@@ -89,7 +89,7 @@ $(document).ready(function() {
 				<option value="Saudi Arabia">Saudi Arabia</option>
 				<option value="South Africa">South Africa</option>
 				<option value="Rep. of Korea ">S. Korea</option>
-				<option value="Spain">Spain</option>	
+				<option value="Spain">Spain</option>
 				<option value="Turkey">Turkey</option>
 				<option value="United Kingdom">United Kingdom</option>
 				<option value="USA">USA</option>
@@ -147,7 +147,7 @@ $(document).ready(function() {
 				<option value="Saudi Arabia">Saudi Arabia</option>
 				<option value="South Africa">South Africa</option>
 				<option value="Rep. of Korea ">S. Korea</option>
-				<option value="Spain">Spain</option>	
+				<option value="Spain">Spain</option>
 				<option value="Turkey">Turkey</option>
 				<option value="United Kingdom">United Kingdom</option>
 				<option value="USA">USA</option>
@@ -162,8 +162,8 @@ $(document).ready(function() {
 var data = <?php echo json_encode($data)?>;
 console.log(data);
 
-var margin = {top: 30, right: 20, bottom: 30, left: 50},
-    width = 1000 - margin.left - margin.right,
+var margin = {top: 30, right: 100, bottom: 30, left: 50},
+    width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // Parse the date / time
@@ -187,7 +187,7 @@ var valueline = d3.svg.line()
 
 var importline = d3.svg.line()
 	.x(function(d) {return x(d.Year);})
-	.y(function(d) {return y(d.Import);})  
+	.y(function(d) {return y(d.Import);})
 
 // Adds the svg canvas
 var svg = d3.select(".centered")
@@ -214,7 +214,7 @@ var lines2 = document.getElementsByClassName('linepath');
 //var lines = [].concat([lines3.item(0), lines2.item(0)]);
 //lines = lines.concat(document.getElementsByClassName('line2'));
 
-//g for the circles and text 
+//g for the circles and text
 var mousePerLine = mouseG.selectAll('.mouse-per-line')
 	.data(data)//d3.range(lines/length))
 	.enter()
@@ -268,7 +268,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
             var xDate = x.invert(mouse[0]),
                 bisect = d3.bisector(function(d) { return d.date; }).right;
                 idx = bisect(data, xDate);
-            
+
             var beginning = 0,
                 end = lines2[i].getTotalLength(),
                 target = null;
@@ -283,10 +283,10 @@ mouseG.append('svg:rect')//append the rect to catch the movement
               else if (pos.x < mouse[0]) beginning = target;
               else break; //position found
             }
-            
+
             d3.select(this).select("text")
               .text(y.invert(pos.y).toFixed(2));
-              
+
             return "translate(" + mouse[0] + "," + pos.y +")";
           });
 
@@ -333,6 +333,13 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 		    .style("font-size", "16px")
 		    .style("text-decoration", "underline")
 		    .text("Imports/Exports of Commodity between Countries");
+
+	 svg.append("text")
+			  .attr("transform", "rotate(-90)")
+			  .attr("y", -50)
+			  .attr("x", margin.top - (height / 3))
+			  .attr("dy", ".71em")
+			  .text("USD ($)");
 // legend bit
 		    var colorScale = d3.scale.ordinal()
 	        .domain([ "Exports", "Imports" ])
@@ -340,6 +347,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 
 	      var colorLegend = d3.legend.color()
 	        .labelFormat(d3.format(".0f"))
+
 	        .scale(colorScale)
 	        .shapePadding(5)
 	        .shapeWidth(25)
@@ -347,7 +355,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 	        .labelOffset(12);
 
 	      svg.append("g")
-	        .attr("transform", "translate(520, 60)")
+	        .attr("transform", "translate(660, 60)")
 	        .call(colorLegend);
 
 </script>
