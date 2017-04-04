@@ -206,8 +206,11 @@ mouseG.append("path")//black vertical line for the mouse to follow
 
 var color = d3.scale.category10();
 
+var lines = document.getElementsByClassName('line');
+
+//g for the circles and text 
 var mousePerLine = mouseG.selectAll('.mouse-per-line')
-	.data(data)
+	.data(data)//d3.range(lines/length))
 	.enter()
 	.append("g")
 	.attr("class", "mouse-per-line");
@@ -215,7 +218,7 @@ var mousePerLine = mouseG.selectAll('.mouse-per-line')
 mousePerLine.append("circle")
       .attr("r", 7)
       .style("stroke", function(d) {
-        return color(d.name);
+        return 'red';//color(d.name);
       })
       .style("fill", "none")
       .style("stroke-width", "1px")
@@ -258,7 +261,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
             console.log(width/mouse[0])
             var xDate = x.invert(mouse[0]),
                 bisect = d3.bisector(function(d) { return d.date; }).right;
-                idx = bisect(d.values, xDate);
+                idx = bisect(data, xDate);
             
             var beginning = 0,
                 end = lines[i].getTotalLength(),
@@ -301,7 +304,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
         .attr("d", valueline(data));
 
     svg.append("path")
-    	.attr("class", "line2")
+    	.attr("class", "line")
     	.style("stroke", "#B90EE3" )
     	.attr("d", importline(data));
     // Add the X Axis
