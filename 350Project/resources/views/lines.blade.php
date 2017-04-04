@@ -26,10 +26,18 @@ $(document).ready(function() {
 					 for (var i = 0; i < data.length; i++) {
 		 				data[i].Year = parseDate(data[i].Year);
 		 			}
+					var max = get_max(data);
+			      // Scale the range of the data
+			      x.domain(d3.extent(data, function(d) { return d.Year; }));
+			  	 if (max == "Export") {
+			  		  y.domain([0, d3.max(data, function(d) { return d.Export; })]);
+			  	 } else {
+			  		  y.domain([0, d3.max(data, function(d) { return d.Import; })]);
+			  	 }
 
 		     	// Scale the range of the data again
-		     	x.domain(d3.extent(data, function(d) { return d.Year; }));
-		 	   y.domain([0, d3.max(data, function(d) { return d.Export; })]);
+		     	//x.domain(d3.extent(data, function(d) { return d.Year; }));
+		 	   //y.domain([0, d3.max(data, function(d) { return d.Export; })]);
 		     // Select the section we want to apply our changes to
 
 		     //Transition Section
@@ -162,13 +170,15 @@ $(document).ready(function() {
 var data = <?php echo json_encode($data)?>;
 console.log(data);
 
-var margin = {top: 30, right: 100, bottom: 30, left: 50},
+var margin = {top: 30, right: 130, bottom: 75, left: 75},
     width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;
 // Set the ranges
+
+
 var x = d3.time.scale().range([0, width]);
 var y = d3.scale.linear().range([height, 0]);
 // Define the axes
@@ -300,10 +310,15 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 		data[i].Year = parseDate(data[i].Year);
 	}
 	console.log(data[0].Year);
-
+	 var max = get_max(data);
     // Scale the range of the data
     x.domain(d3.extent(data, function(d) { return d.Year; }));
-    y.domain([0, d3.max(data, function(d) { return d.Export; }, function(d){return d.Import})]);
+	 if (max == "Export") {
+		  y.domain([0, d3.max(data, function(d) { return d.Export; })]);
+	 } else {
+		  y.domain([0, d3.max(data, function(d) { return d.Import; })]);
+	 }
+    //y.domain([0, d3.max(data, function(d) { return d.Export; }, function(d){return d.Import})]);
     // Add the valueline path.
     svg.append("path")
     	.attr("id", "linepath")
@@ -336,10 +351,16 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 
 	 svg.append("text")
 			  .attr("transform", "rotate(-90)")
-			  .attr("y", -50)
+			  .attr("y", -60)
 			  .attr("x", margin.top - (height / 3))
 			  .attr("dy", ".71em")
 			  .text("USD ($)");
+
+	 svg.append("text")             // text label for the x axis
+		     .attr("x", 265 )
+		     .attr("y",  350 )
+		     .style("text-anchor", "middle")
+		     .text("Year");
 // legend bit
 		    var colorScale = d3.scale.ordinal()
 	        .domain([ "Exports", "Imports" ])
@@ -355,7 +376,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 	        .labelOffset(12);
 
 	      svg.append("g")
-	        .attr("transform", "translate(660, 60)")
+	        .attr("transform", "translate(640, 60)")
 	        .call(colorLegend);
 
 </script>
