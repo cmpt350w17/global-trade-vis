@@ -9,6 +9,7 @@ $(document).ready(function() {
 	var country = 'Canada';
 	var commodity = 'All Commodities';
 	var year = '1997';
+	var type = 'Export';
 	var amts=["1997","2000","2003","2006","2009","2011","2012","2013","2014","2015"];
 
 
@@ -29,7 +30,7 @@ $(document).ready(function() {
 			 $.ajax({
 					  type: 'GET',
 					  url: '{!!URL::to('ajaxget')!!}',
-					  data: { 'country': country, 'commodity': commodity, 'year': year},
+					  data: { 'country': country, 'commodity': commodity, 'year': year, 'type':type},
 					  success: function(data) {
 						  console.log('success');
 						  //console.log(data);
@@ -95,13 +96,13 @@ $(document).ready(function() {
 
 		country = $("#drop").val();
 		commodity = $("#drop2").val();
-		//year = $("#drop3").val();
+		type = $("#drop3").val();
 
 		$.ajax({
 				 type: 'GET',
 				 url: '{!!URL::to('ajaxget')!!}',
-				 data: { 'country': country, 'commodity': commodity, 'year': year},
-				 success: function(data) {
+				 data: { 'country': country, 'commodity': commodity, 'year': year, 'type': type},
+				 	success: function(data) {
 					 console.log('success');
 					 //console.log(data);
 					 data.shift();
@@ -194,13 +195,9 @@ $(document).ready(function() {
 				<option value="United Kingdom">United Kingdom</option>
 				<option value="USA">USA</option>
 				<option value="Venezuela">Venezuela</option>
-				
-		
-				
-				
-				
 	 		</select>
   		</div>
+
 		<div class="form-group">
 		<label class="col-md-4 control-label">Commodity</label>
 			<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop2">
@@ -222,6 +219,15 @@ $(document).ready(function() {
 		  		<option value="Textile articles, sets, worn clothing etc">Textile articles, sets, worn clothing etc</option>
 		  		<option value="Vehicles other than railway, tramway">Vehicles other than railway, tramway</option>
 		  		<option value="Arms and ammunition, parts and accessories thereof">Arms and ammunition, parts and accessories thereof</option>
+			</select>
+		</div>
+
+		
+		<div class="form-group">
+		<label class="col-md-4 control-label" id="orderby">Order by</label>
+			<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop3">
+		  		<option selected>Export</option>
+		  		<option value="Import">Import</option>
 			</select>
 		</div>
 
@@ -344,8 +350,6 @@ $(document).ready(function() {
 	 	      .attr("width", x.rangeBand()/2)
 	 			.attr("y", function(d) { return y(d.Import); })
 	 	      .attr("height", function(d) { return height - y(d.Import); });
-
-
 
 	</script>
 

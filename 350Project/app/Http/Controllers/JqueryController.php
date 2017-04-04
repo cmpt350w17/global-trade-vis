@@ -17,7 +17,7 @@ class JqueryController extends Controller
       $data = Trade::select('Reporter', 'Partner', 'Year', 'Export', 'Commodity','Import')
       ->where('Reporter', '=',$request->country)
       ->where('Commodity', '=', $request->commodity)->where('Year', '=', $request->year)
-      ->orderBy ('Export', 'DESC')->take (11)->get();
+      ->orderBy ($request->type, 'DESC')->take (11)->get();
       /*$data = Trade::where('Year',$request->year)->where('Commodity',$request->commodity)->where('Reporter',$request->country)
       ->orderBy('Export','DESC')->take(11)->get();*/
 
