@@ -31,6 +31,8 @@ $(document).ready(function() {
 		     	x.domain(d3.extent(data, function(d) { return d.Year; }));
 		 	   y.domain([0, d3.max(data, function(d) { return d.Export; })]);
 		     // Select the section we want to apply our changes to
+
+		     //Transition Section
 		     var svg = d3.select("body").transition();
 		     // Make the changes
 		         svg.select(".line")   // change the line
@@ -206,7 +208,11 @@ mouseG.append("path")//black vertical line for the mouse to follow
 
 var color = d3.scale.category10();
 
-var lines = document.getElementsByClassName('line');
+
+var lines2 = document.getElementsByClassName('linepath');
+
+//var lines = [].concat([lines3.item(0), lines2.item(0)]);
+//lines = lines.concat(document.getElementsByClassName('line2'));
 
 //g for the circles and text 
 var mousePerLine = mouseG.selectAll('.mouse-per-line')
@@ -264,12 +270,12 @@ mouseG.append('svg:rect')//append the rect to catch the movement
                 idx = bisect(data, xDate);
             
             var beginning = 0,
-                end = lines[i].getTotalLength(),
+                end = lines2[i].getTotalLength(),
                 target = null;
 
             while (true){
               target = Math.floor((beginning + end) / 2);
-              pos = lines[i].getPointAtLength(target);
+              pos = lines2[i].getPointAtLength(target);
               if ((target === end || target === beginning) && pos.x !== mouse[0]) {
                   break;
               }
@@ -283,6 +289,7 @@ mouseG.append('svg:rect')//append the rect to catch the movement
               
             return "translate(" + mouse[0] + "," + pos.y +")";
           });
+
       });
 
 
@@ -296,15 +303,16 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 
     // Scale the range of the data
     x.domain(d3.extent(data, function(d) { return d.Year; }));
-    y.domain([0, d3.max(data, function(d) { return d.Export; })]);
+    y.domain([0, d3.max(data, function(d) { return d.Export; }, function(d){return d.Import})]);
     // Add the valueline path.
-    svg.append("path")  
-        .attr("class", "line")
+    svg.append("path")
+    	.attr("id", "linepath")
+        .attr("class", "line linepath")
         .style("stroke", "#0E40E3")
         .attr("d", valueline(data));
 
     svg.append("path")
-    	.attr("class", "line")
+    	.attr("class", "line2 linepath")
     	.style("stroke", "#B90EE3" )
     	.attr("d", importline(data));
     // Add the X Axis
@@ -316,6 +324,31 @@ mouseG.append('svg:rect')//append the rect to catch the movement
     svg.append("g")
         .attr("class", "y axis")
         .call(yAxis);
+
+    // make the graph title
+    svg.append("text")
+		    .attr("x", (width / 2))
+		    .attr("y", 0 - (margin.top / 2.5))
+		    .attr("text-anchor", "middle")
+		    .style("font-size", "16px")
+		    .style("text-decoration", "underline")
+		    .text("Imports/Exports of Commodity between Countries");
+// legend bit
+		    var colorScale = d3.scale.ordinal()
+	        .domain([ "Exports", "Imports" ])
+	        .range(["#0E40E3","#B90EE3"]);
+
+	      var colorLegend = d3.legend.color()
+	        .labelFormat(d3.format(".0f"))
+	        .scale(colorScale)
+	        .shapePadding(5)
+	        .shapeWidth(25)
+	        .shapeHeight(20)
+	        .labelOffset(12);
+
+	      svg.append("g")
+	        .attr("transform", "translate(520, 60)")
+	        .call(colorLegend);
 
 </script>
 @stop
