@@ -49,6 +49,9 @@ path {
 	left: 250px;
 	width: 300px;
 }
+#orderby{
+	width: 100px;
+}
 </style>
 
 <head>
