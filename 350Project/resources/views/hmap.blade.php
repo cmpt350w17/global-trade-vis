@@ -7,7 +7,7 @@
 <div id="container" style="position: relative; width: 700px; height: 475px;"></div>
 <style>
 .datamaps-legend {
-    color: blue;
+    color: black;
 	 margin-top: 0px;
     right: -100px;
     top: 0;
@@ -205,9 +205,9 @@
 	    	projection: 'mercator',
 		    fills: {
 				 "< 10%": "#ccccff",
-	          "10-20%": "#9999ff",
-	          "30-50%": "#6666ff",
-	          "50-70%": "#3333ff",
+	          "10-30%": "#9999ff",
+	          "30-50%": "#8080ff",
+	          "50-70%": "#6666ff",
 	          "90-100%": "#02386F",
 
 		    defaultFill: "#F5F5F5" },
