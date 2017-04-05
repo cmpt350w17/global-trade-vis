@@ -16,8 +16,6 @@
 	width:15%;
 }
 
-
-
 html, body {
 
 	font: 12px Arial;
@@ -52,6 +50,17 @@ path {
 #orderby{
 	width: 100px;
 }
+
+#zoom-info {
+  display: inline-block;
+  padding: 10px;
+}
+
+#zoom-controls{
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 </style>
 
 <head>
@@ -76,15 +85,17 @@ path {
 <body>
 
 	  <div>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-inverse">
 			<div class="container-fluid">
-				<div class="navbar-header"></div>
-				<ul class="nav navbar-nav">
-					<li> <a href="/">Map View</a></li>
-		         <li><a href="bars">Bar view</a></li>
-					<li><a href="lines">Line view</a></li>
-		         <li><a href="disc">Disc view</a></li>
-				</ul>
+				<div class="navbar-header">
+				<a class="navbar-brand" href="/">Global Trade Vis</a>
+					<ul class="nav navbar-nav">
+						<li> <a style="margin-left: 40px" href="/">Map View</a></li>
+			         <li><a href="bars">Bar view</a></li>
+						<li><a href="lines">Line view</a></li>
+			         <li><a href="disc">Disc view</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</div>
