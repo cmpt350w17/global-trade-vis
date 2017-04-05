@@ -170,9 +170,9 @@ $(document).ready(function() {
 var data = <?php echo json_encode($data)?>;
 console.log(data);
 
-var margin = {top: 30, right: 130, bottom: 75, left: 75},
-    width = 800 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+var margin = {top: 30, right: 500, bottom: 75, left: 75},
+    width = 1200 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
 
 // Parse the date / time
 var parseDate = d3.time.format("%Y").parse;
@@ -358,12 +358,12 @@ mouseG.append('svg:rect')//append the rect to catch the movement
 
 	 svg.append("text")             // text label for the x axis
 		     .attr("x", 265 )
-		     .attr("y",  350 )
+		     .attr("y",  440 )
 		     .style("text-anchor", "middle")
 		     .text("Year");
 // legend bit
 		    var colorScale = d3.scale.ordinal()
-	        .domain([ "Exports", "Imports" ])
+	        .domain([ "Exporter to Importer", "Importer to Exporter" ])
 	        .range(["#0E40E3","#B90EE3"]);
 
 	      var colorLegend = d3.legend.color()
