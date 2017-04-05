@@ -47,8 +47,19 @@ path {
 	left: 250px;
 	width: 300px;
 }
-#orderby{
+
+.custom-select {
+    border: 1px solid #ccc;
+    width: 180px;
+    border-radius: 5px;
+    overflow: hidden;
+	 margin: 10px;
+	 padding: 5px;
+}
+
+#orderby {
 	width: 100px;
+
 }
 
 #zoom-info {

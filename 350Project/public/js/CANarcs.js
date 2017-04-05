@@ -2,7 +2,7 @@ var canada = [
    {
       origin: 'CAN',
       destination: 'USA',
-		strokeWidth: 4
+		strokeWidth: 2
    },
 	{
 		origin: 'CAN',

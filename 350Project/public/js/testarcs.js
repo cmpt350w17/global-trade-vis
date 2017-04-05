@@ -964,8 +964,7 @@ var Korea = [
 		destination: 'AUS',
 		strokeWidth: 2
 	}
-
-];  
+];
 
 var Spain = [
    {
