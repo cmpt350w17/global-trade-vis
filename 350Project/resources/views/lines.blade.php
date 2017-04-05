@@ -59,7 +59,7 @@ $(document).ready(function() {
 </script>
 <!-- Sidebar -->
 <div class="w3-sidebar w3-light-grey w3-bar-block" id="sidebar">
-	<h4 class="w3-bar-item">Global Trade Vis</h4>
+	<h4 class="w3-bar-item">Line Graph</h4>
 	<form method="GET" id="frm">
 	<meta name="csrf-token" content="{{ csrf_token() }}"/>
 		<div class="form-group">
