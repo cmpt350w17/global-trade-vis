@@ -964,7 +964,451 @@ var Korea = [
 		destination: 'AUS',
 		strokeWidth: 2
 	}
-
 ];
-//  Spain, Israel, Greece, New Zealand,
-//Algeria, Colombia, Nigeria, Venezuela, Iran
+
+var Spain = [
+   {
+      origin: 'ESP',
+      destination: 'FRA',
+		strokeWidth: 2
+   },
+	{
+		origin: 'ESP',
+		destination: 'DEU',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ESP',
+		destination: 'ITA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ESP',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ESP',
+		destination: 'PRT',
+		strokeWidth: 2
+	},
+   {
+		origin: 'ESP',
+		destination: 'USA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ESP',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'ESP',
+		destination: 'BEL',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ESP',
+		destination: 'MAR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ESP',
+		destination: 'TUR',
+		strokeWidth: 2
+	}
+];
+
+var Israel = [
+   {
+      origin: 'ISR',
+      destination: 'USA',
+		strokeWidth: 2
+   },
+	{
+		origin: 'ISR',
+		destination: 'HKG',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ISR',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ISR',
+		destination: 'CHN',
+		strokeWidth: 2
+	},
+   {
+		origin: 'ISR',
+		destination: 'BEL',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ISR',
+		destination: 'IND',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'ISR',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ISR',
+		destination: 'VNM',
+		strokeWidth: 2
+	},
+	{
+		origin: 'ISR',
+		destination: 'TUR',
+		strokeWidth: 2
+	}
+];
+var Greece = [
+   {
+      origin: 'GRC',
+      destination: 'ITA',
+		strokeWidth: 2
+   },
+	{
+		origin: 'GRC',
+		destination: 'TUR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'GRC',
+		destination: 'CYP',
+		strokeWidth: 2
+	},
+   {
+		origin: 'GRC',
+		destination: 'BGR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'GRC',
+		destination: 'USA',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'GRC',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'GRC',
+		destination: 'EGY',
+		strokeWidth: 2
+	},
+	{
+		origin: 'GRC',
+		destination: 'LBN',
+		strokeWidth: 2
+	},
+	{
+		origin: 'GRC',
+		destination: 'SAU',
+		strokeWidth: 2
+	}
+];
+
+var NewZealand = [
+   {
+      origin: 'NZL',
+      destination: 'CHN',
+		strokeWidth: 2
+   },
+	{
+		origin: 'NZL',
+		destination: 'AUS',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NZL',
+		destination: 'USA',
+		strokeWidth: 2
+	},
+   {
+		origin: 'NZL',
+		destination: 'JPN',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NZL',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'NZL',
+		destination: 'KOR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NZL',
+		destination: 'SGP',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NZL',
+		destination: 'MYS',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NZL',
+		destination: 'UAE',
+		strokeWidth: 2
+	}
+];
+var Algeria= [
+   {
+      origin: 'DZA',
+      destination: 'ESP',
+		strokeWidth: 2
+   },
+	{
+		origin: 'DZA',
+		destination: 'ITA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'DZA',
+		destination: 'FRA',
+		strokeWidth: 2
+	},
+   {
+		origin: 'DZA',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'DZA',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'DZA',
+		destination: 'TUR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'DZA',
+		destination: 'BRA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'DZA',
+		destination: 'BEL',
+		strokeWidth: 2
+	},
+	{
+		origin: 'DZA',
+		destination: 'PRT',
+		strokeWidth: 2
+	}
+];
+var Colombia= [
+   {
+      origin: 'COL',
+      destination: 'USA',
+		strokeWidth: 2
+   },
+	{
+		origin: 'COL',
+		destination: 'PAN',
+		strokeWidth: 2
+	},
+	{
+		origin: 'COL',
+		destination: 'CHN',
+		strokeWidth: 2
+	},
+   {
+		origin: 'COL',
+		destination: 'ESP',
+		strokeWidth: 2
+	},
+	{
+		origin: 'COL',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'COL',
+		destination: 'ECU',
+		strokeWidth: 2
+	},
+	{
+		origin: 'COL',
+		destination: 'BRA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'COL',
+		destination: 'BRA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'COL',
+		destination: 'PER',
+		strokeWidth: 2,
+	},
+	{
+		origin: 'COL',
+		destination: 'VEN',
+		strokeWidth: 2,
+	},
+	{
+		origin: 'COL',
+		destination: 'MEX',
+		strokeWidth: 2,
+	}
+];
+var Nigeria= [
+   {
+      origin: 'NGA',
+      destination: 'IND',
+		strokeWidth: 2
+   },
+	{
+		origin: 'NGA',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NGA',
+		destination: 'ESP',
+		strokeWidth: 2
+	},
+   {
+		origin: 'NGA',
+		destination: 'BRA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NGA',
+		destination: 'FRA',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'NGA',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NGA',
+		destination: 'ZAF',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NGA',
+		destination: 'ITA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NGA',
+		destination: 'IDN',
+		strokeWidth: 2
+	},
+	{
+		origin: 'NGA',
+		destination: 'USA',
+		strokeWidth: 2
+	}
+];
+/* No 2015 data and spotty data in general.
+var Venezuela= [
+   {
+      origin: 'VEN',
+      destination: 'ESP',
+		strokeWidth: 2
+   },
+	{
+		origin: 'VEN',
+		destination: 'ITA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'VEN',
+		destination: 'FRA',
+		strokeWidth: 2
+	},
+   {
+		origin: 'VEN',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'VEN',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'VEN',
+		destination: 'TUR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'VEN',
+		destination: 'BRA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'VEN',
+		destination: 'PER',
+		strokeWidth: 2
+	},
+	{
+		origin: 'VEN',
+		destination: 'PRT',
+		strokeWidth: 2
+	}
+];
+var Iran= [
+   {
+      origin: 'IRN',
+      destination: 'ESP',
+		strokeWidth: 2
+   },
+	{
+		origin: 'IRN',
+		destination: 'ITA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'IRN',
+		destination: 'FRA',
+		strokeWidth: 2
+	},
+   {
+		origin: 'IRN',
+		destination: 'GBR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'IRN',
+		destination: 'NED',
+		strokeWidth: 2
+	},
+	 {
+		origin: 'IRN',
+		destination: 'TUR',
+		strokeWidth: 2
+	},
+	{
+		origin: 'IRN',
+		destination: 'BRA',
+		strokeWidth: 2
+	},
+	{
+		origin: 'IRN',
+		destination: 'BEL',
+		strokeWidth: 2
+	},
+	{
+		origin: 'IRN',
+		destination: 'PRT',
+		strokeWidth: 2
+	}
+];*/

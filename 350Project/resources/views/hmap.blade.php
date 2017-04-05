@@ -6,6 +6,195 @@
 <script src="js/testarcs.js"></script>
 <div id="container" style="position: relative; width: 700px; height: 475px;"></div>
 <script>
+	function Zoom(args) {
+	  $.extend(this, {
+	    $buttons:   $(".zoom-button"),
+	    $info:      $("#zoom-info"),
+	    scale:      { max: 50, currentShift: 0 },
+	    $container: args.$container,
+	    datamap:    args.datamap
+	  });
+
+	  this.init();
+	}
+
+	Zoom.prototype.init = function() {
+	  var paths = this.datamap.svg.selectAll("path"),
+	      subunits = this.datamap.svg.selectAll(".datamaps-subunit");
+
+	  // preserve stroke thickness
+	  paths.style("vector-effect", "non-scaling-stroke");
+
+	  // disable click on drag end
+	  subunits.call(
+	    d3.behavior.drag().on("dragend", function() {
+	      d3.event.sourceEvent.stopPropagation();
+	    })
+	  );
+
+	  this.scale.set = this._getScalesArray();
+	  this.d3Zoom = d3.behavior.zoom().scaleExtent([ 1, this.scale.max ]);
+
+	  this._displayPercentage(1);
+	  this.listen();
+	};
+
+	Zoom.prototype.listen = function() {
+	  this.$buttons.off("click").on("click", this._handleClick.bind(this));
+
+	  this.datamap.svg
+	    .call(this.d3Zoom.on("zoom", this._handleScroll.bind(this)))
+	    .on("dblclick.zoom", null); // disable zoom on double-click
+	};
+
+	Zoom.prototype.reset = function() {
+	  this._shift("reset");
+	};
+
+	Zoom.prototype._handleScroll = function() {
+	  var translate = d3.event.translate,
+	      scale = d3.event.scale,
+	      limited = this._bound(translate, scale);
+
+	  this.scrolled = true;
+
+	  this._update(limited.translate, limited.scale);
+	};
+
+	Zoom.prototype._handleClick = function(event) {
+	  var direction = $(event.target).data("zoom");
+
+	  this._shift(direction);
+	};
+
+	Zoom.prototype._shift = function(direction) {
+	  var center = [ this.$container.width() / 2, this.$container.height() / 2 ],
+	      translate = this.d3Zoom.translate(), translate0 = [], l = [],
+	      view = {
+	        x: translate[0],
+	        y: translate[1],
+	        k: this.d3Zoom.scale()
+	      }, bounded;
+
+	  translate0 = [
+	    (center[0] - view.x) / view.k,
+	    (center[1] - view.y) / view.k
+	  ];
+
+		if (direction == "reset") {
+	  	view.k = 1;
+	    this.scrolled = true;
+	  } else {
+	  	view.k = this._getNextScale(direction);
+	  }
+
+	l = [ translate0[0] * view.k + view.x, translate0[1] * view.k + view.y ];
+
+	  view.x += center[0] - l[0];
+	  view.y += center[1] - l[1];
+
+	  bounded = this._bound([ view.x, view.y ], view.k);
+
+	  this._animate(bounded.translate, bounded.scale);
+	};
+
+	Zoom.prototype._bound = function(translate, scale) {
+	  var width = this.$container.width(),
+	      height = this.$container.height();
+
+	  translate[0] = Math.min(
+	    (width / height)  * (scale - 1),
+	    Math.max( width * (1 - scale), translate[0] )
+	  );
+
+	  translate[1] = Math.min(0, Math.max(height * (1 - scale), translate[1]));
+
+	  return { translate: translate, scale: scale };
+	};
+
+	Zoom.prototype._update = function(translate, scale) {
+	  this.d3Zoom
+	    .translate(translate)
+	    .scale(scale);
+
+	  this.datamap.svg.selectAll("g")
+	    .attr("transform", "translate(" + translate + ")scale(" + scale + ")");
+
+	  this._displayPercentage(scale);
+	};
+
+	Zoom.prototype._animate = function(translate, scale) {
+	  var _this = this,
+	      d3Zoom = this.d3Zoom;
+
+	  d3.transition().duration(350).tween("zoom", function() {
+	    var iTranslate = d3.interpolate(d3Zoom.translate(), translate),
+	        iScale = d3.interpolate(d3Zoom.scale(), scale);
+
+			return function(t) {
+	      _this._update(iTranslate(t), iScale(t));
+	    };
+	  });
+	};
+
+	Zoom.prototype._displayPercentage = function(scale) {
+	  var value;
+
+	  value = Math.round(Math.log(scale) / Math.log(this.scale.max) * 100);
+	  this.$info.text(value + "%");
+	};
+
+	Zoom.prototype._getScalesArray = function() {
+	  	var array = [],
+	      	scaleMaxLog = Math.log(this.scale.max);
+
+	  	for (var i = 0; i <= 10; i++) {
+	    	array.push(Math.pow(Math.E, 0.1 * i * scaleMaxLog));
+	  	}
+
+  		return array;
+	};
+
+	Zoom.prototype._getNextScale = function(direction) {
+		var scaleSet = this.scale.set,
+	      	currentScale = this.d3Zoom.scale(),
+	      	lastShift = scaleSet.length - 1,
+	      	shift, temp = [];
+
+	  	if (this.scrolled) {
+
+		    for (shift = 0; shift <= lastShift; shift++) {
+		      temp.push(Math.abs(scaleSet[shift] - currentScale));
+		    }
+
+		    shift = temp.indexOf(Math.min.apply(null, temp));
+
+		    if (currentScale >= scaleSet[shift] && shift < lastShift) {
+		      shift++;
+		    }
+
+		    if (direction == "out" && shift > 0) {
+		      shift--;
+		    }
+
+		    this.scrolled = false;
+
+		  } else {
+
+		    shift = this.scale.currentShift;
+
+		    if (direction == "out") {
+		      shift > 0 && shift--;
+		    } else {
+		      shift < lastShift && shift++;
+		    }
+		  }
+
+		  this.scale.currentShift = shift;
+
+		  return scaleSet[shift];
+	};
+
     var dt = <?php echo json_encode($data)?>;
     console.log(dt);
     for (var i = 0; i < dt.length; i++) {
@@ -16,7 +205,7 @@
         ["CHN",100],["USA",66],["DEU",58],["JPN",27],["KOR",23],["FRA",21],
         ["GBR",20],["ITA",20],["CAN",18],["MEX",17],["RUS",15],["IND",12],
         ["SAU",9],["BRA",8],["AUS",8],["ZAF",3],["TUR",6],["IDN",7],
-        ["ARG",2]];
+        ["ARG",2], ["ESP",12],["ISR",3],["GRC",1], ["NZL",1.5],["DZA",1.5],["COL",1.5],["NGA",4.5]];
         var dataset = {};
         // We need to colorize every country based on "numberOfWhatever"
         // colors should be uniq for every value.
@@ -38,67 +227,129 @@
         });
 
 
-    var map = new Datamap({element: document.getElementById('container'),
-    done: function(datamap) {
-            datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+    function Datamap(){
+    	this.$container = $("#container");
+    	this.instance = new Datamaps({
+    		scope:'world',
+    		element:this.$container.get(0),
+	    	projection: 'mercator',
+		    fills: {
+		    defaultFill: "#F5F5F5" },
+		    data: dataset,
+		    geographyConfig: {
+		        borderColor: '#DEDEDE',
+		        highlightBorderWidth: 2,
+		        // don't change color on mouse hover
+		        highlightFillColor: function(geo) {
+		            return geo['fillColor'] || '#F5F5F5';
+		        },
+		        // only change border
+		        highlightBorderColor: '#B7B7B7',
+		        // show desired information in tooltip
+		        popupTemplate: function(geo, data) {
+		            // don't show tooltip if country don't present in dataset
+		            if (data) { return ['<div class="hoverinfo">',
+		                '<strong>', geo.properties.name, '</strong>',
+		                '<br>Export percentage <br>relative to world leader: <strong>', data.numberOfThings,'%</strong>',
+		                '</div>'].join(''); }
+		            else{
+		            	 return ['<div class="hoverinfo">',
+		                '<strong>', geo.properties.name, '</strong></div>'].join('');
+		            }
+		            // tooltip content
+
+		        }
+		    },
+    		done: this._handleMapReady.bind(this)
+		});
+	}
+
+
+	Datamap.prototype._handleMapReady = function(datamap) {
+		datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
                 console.log(geography.properties.name);
                 if (geography.properties.name == "Canada") {
-                   map.arc( Canada, {popupOnHover: true});
+                   datamap.arc( Canada, {popupOnHover: true});
                 }
                 if (geography.properties.name == "United States of America") {
-                   map.arc( America, {popupOnHover: true});
+                   datamap.arc( America, {popupOnHover: true});
                 }
                 if (geography.properties.name == "China") {
-                   map.arc( China, {popupOnHover: true});
+                   datamap.arc( China, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Germany") {
-                   map.arc( Germany, {popupOnHover: true});
+                   datamap.arc( Germany, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Japan") {
-                   map.arc( Japan, {popupOnHover: true});
+                   datamap.arc( Japan, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Mexico") {
-                   map.arc( Mexico, {popupOnHover: true});
+                   datamap.arc( Mexico, {popupOnHover: true});
                 }
                 if (geography.properties.name == "United Kingdom") {
-                   map.arc( UnitedKingdom, {popupOnHover: true});
+                   datamap.arc( UnitedKingdom, {popupOnHover: true});
                 }
                 if (geography.properties.name == "France") {
-                   map.arc( France, {popupOnHover: true});
+                   datamap.arc( France, {popupOnHover: true});
                 }
                 if (geography.properties.name == "India") {
-                   map.arc( India, {popupOnHover: true});
+                   datamap.arc( India, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Brazil") {
-                   map.arc( Brazil, {popupOnHover: true});
+                   datamap.arc( Brazil, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Italy") {
-                   map.arc( Italy, {popupOnHover: true});
+                   datamap.arc( Italy, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Turkey") {
-                   map.arc( Turkey, {popupOnHover: true});
+                   datamap.arc( Turkey, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Russia") {
-                   map.arc( Russia, {popupOnHover: true});
+                   datamap.arc( Russia, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Saudi Arabia") {
-                   map.arc( Saudi, {popupOnHover: true});
+                   datamap.arc( Saudi, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Australia") {
-                   map.arc( Australia, {popupOnHover: true});
+                   datamap.arc( Australia, {popupOnHover: true});
                 }
                 if (geography.properties.name == "South Africa") {
-                   map.arc( SAfrica, {popupOnHover: true});
+                   datamap.arc( SAfrica, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Indonesia") {
-                   map.arc( Indonesia, {popupOnHover: true});
+                   datamap.arc( Indonesia, {popupOnHover: true});
                 }
                 if (geography.properties.name == "Argentina") {
-                   map.arc( Argentina, {popupOnHover: true});
+                   datamap.arc( Argentina, {popupOnHover: true});
                 }
                 if (geography.properties.name == "South Korea") {
-                   map.arc( Korea, {popupOnHover: true});
+                   datamap.arc( Korea, {popupOnHover: true});
                 }
+                if (geography.properties.name == "Spain") {
+                	datamap.arc(Spain, {popupOnHover: true});
+                }
+                 if (geography.properties.name == "Israel") {
+                	datamap.arc(Israel, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Greece") {
+                	datamap.arc(Greece, {popupOnHover: true});
+                }
+                if (geography.properties.name == "New Zealand") {
+                	datamap.arc(NewZealand, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Algeria") {
+                	datamap.arc(Algeria, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Colombia") {
+                	datamap.arc(Colombia, {popupOnHover: true});
+                }
+                if (geography.properties.name == "Nigeria") {
+                	datamap.arc(Nigeria, {popupOnHover: true});
+                }
+            })
+		document.getElementById("clearbutton").onclick=function(){
+	 		datamap.svg.selectAll('path.datamaps-arc').remove();
+		}
 
 
 
@@ -122,7 +373,7 @@
         },
         // only change border
         highlightBorderColor: '#B7B7B7',
-        
+
         // show desired information in tooltip
         popupTemplate: function(geo, data) {
             // don't show tooltip if country don't present in dataset
@@ -137,74 +388,26 @@
 
 });
 
+this.zoom = new Zoom({
+	$container: this.$container,
+	datamap: datamap
+});
 
+}
 
-
-
-
+new Datamap();
  </script>
 @stop
 @section('content')
 <div class="w3-sidebar w3-light-grey w3-bar-block" id="sidebar">
-	<h4 class="w3-bar-item">Global Trade Vis</h4>
-	<form method="GET" id="frm">
-	<meta name="csrf-token" content="{{ csrf_token() }}"/>
-		<div class="form-group">
-	 	<label class="col-md-4 control-label">Country</label>
-	 		<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop">
-				<option selected>Canada</option>
-				<option value="USA">USA</option>
-				<option value="Japan">Japan</option>
-				<option value="China">China</option>
-				<option value="India">India</option>
-				<option value="United Kingdom">United Kingdom</option>
-				<option value="France">France</option>
-				<option value="Brazil">Brazil</option>
-				<option value="Italy">Italy</option>
-				<option value="Germany">Germany</option>
-				<option value="Mexico">Mexico</option>
-				<option value="Turkey">Turkey</option>
-	 		</select>
-  		</div>
-		<!--<div class="form-group">
-		<label class="col-md-4 control-label">Commodity</label>
-			<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop2">
-		  		<option selected>All Commodities</option>
-		  		<option value="Pearls, precious stones, metals, coins, etc">Pearls, precious stones, metals, coins, etc</option>
-		  		<option value="Iron and steel">Iron and steel</option>
-		  		<option value="Electrical, electronic equipment">Electrical, electronic equipment</option>
-		  		<option value="Meat and edible meat offal">Meat and edible meat offal</option>
-		  		<option value="Edible vegetables and certain roots and tubers">Edible vegetables and certain roots and tubers</option>
-		  		<option value="Coffee, tea, mate and spices">Coffee, tea, mate and spices</option>
-		  		<option value="Cereal, flour, starch, milk preparations and products">Cereal, flour, starch, milk preparations and products</option>
-		  		<option value="Vegetable, fruit, nut, etc food preparations">Vegetable, fruit, nut, etc food preparations</option>
-		  		<option value="Ores, slag and ash">Ores, slag and ash</option>
-		  		<option value="Petroleum oils and oils obtained from bituminous minerals, crude.">Petroleum oils and oils obtained from bituminous minerals, crude.</option>
-		  		<option value="Inorganic chemicals, precious metal compound, isotope">Inorganic chemicals, precious metal compound, isotope</option>
-		  		<option value="Radioactive chemical elements and radioactive isotopes">Radioactive chemical elements and radioactive isotopes</option>
-		  		<option value="Pharmaceutical products">Pharmaceutical products</option>
-		  		<option value="Wood and articles of wood, wood charcoal">Wood and articles of wood, wood charcoal</option>
-		  		<option value="Textile articles, sets, worn clothing etc">Textile articles, sets, worn clothing etc</option>
-		  		<option value="Vehicles other than railway, tramway">Vehicles other than railway, tramway</option>
-		  		<option value="Arms and ammunition, parts and accessories thereof">Arms and ammunition, parts and accessories thereof</option>
-			</select>
-		</div>
+	<h4 class="w3-bar-item" style="margin-left: 20px">Map Controls</h4>
+	<div id="zoom-controls">
+		<button class="zoom-button" data-zoom="out" style="margin: 2px">-</button>
+		<button class="zoom-button" data-zoom="reset" style="margin: 2px">0</button>
+		<button class="zoom-button" data-zoom="in" style="margin: 2px">+</button>
+		<div id="zoom-info"></div>
+	</div>
+	<button type="button" style="margin-left: 52px " id="clearbutton">Clear Map</button>
+ </div>
 
-	  	<div class="form-group">
-		  	<label class="col-md-4 control-label">Year</label>
-		  	<select name="system1" class="custom-select mb-2 mr-sm-2 mb-sm-0" id="drop3">
-			 	<option selected>2015</option>
-				<option value="1997">1997</option>
-			 	<option value="2000">2000</option>
-			 	<option value="2003">2003</option>
-			 	<option value="2006">2006</option>
-			 	<option value="2009">2009</option>
-			 	<option value="2011">2011</option>
-			 	<option value="2012">2012</option>
-			 	<option value="2013">2013</option>
-			 	<option value="2014">2014</option>
-		 	</select>
-	 	</div>-->
-	</form>
-</div>
 @stop
