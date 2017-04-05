@@ -2,7 +2,7 @@ var Canada = [
    {
       origin: 'CAN',
       destination: 'USA',
-		strokeWidth: 4
+		strokeWidth: 2
    },
 	{
 		origin: 'CAN',
@@ -965,6 +965,6 @@ var Korea = [
 		strokeWidth: 2
 	}
 
-];   
+];
 //  Spain, Israel, Greece, New Zealand,
 //Algeria, Colombia, Nigeria, Venezuela, Iran
